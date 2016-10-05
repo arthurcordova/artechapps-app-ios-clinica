@@ -15,7 +15,7 @@ class MedicoService {
             if (data.length == 0) {
                 return []
             }
-            
+            //Teste
             var mensagens: Array<Mensagem> = []
             let dict: NSArray = try NSJSONSerialization.JSONObjectWithData(data, options:
                 NSJSONReadingOptions.MutableContainers) as! NSArray
