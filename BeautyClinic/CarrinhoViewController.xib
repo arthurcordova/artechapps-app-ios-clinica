@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarrinhoViewController" customModule="BeautyClinic" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="YNu-o2-EH8" id="L1E-3s-IG1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="YNu-o2-EH8">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="452"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="P7S-gt-6n8"/>
+                        <outlet property="delegate" destination="-1" id="XO2-r3-OzH"/>
+                    </connections>
+                </tableView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hyw-cJ-1WQ">
+                    <rect key="frame" x="0.0" y="452" width="320" height="44"/>
+                    <items>
+                        <barButtonItem systemItem="action" id="oty-eO-5Ir">
+                            <connections>
+                                <action selector="confirmarCarrinho" destination="-1" id="Zfh-R6-aNt"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="EP5-h1-OsO"/>
+                        <barButtonItem systemItem="trash" id="gUp-Sk-63m">
+                            <connections>
+                                <action selector="limparCarrinho" destination="-1" id="A3p-yl-zpz"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                    <color key="tintColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YNu-o2-EH8" secondAttribute="trailing" id="2wU-PT-PXO"/>
+                <constraint firstItem="YNu-o2-EH8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9z1-gA-gIZ"/>
+                <constraint firstItem="Hyw-cJ-1WQ" firstAttribute="top" secondItem="YNu-o2-EH8" secondAttribute="bottom" id="QVW-Mi-XN6"/>
+                <constraint firstItem="Hyw-cJ-1WQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" constant="8" id="aCT-2u-eO5"/>
+                <constraint firstAttribute="trailingMargin" secondItem="Hyw-cJ-1WQ" secondAttribute="trailing" constant="8" id="aZq-mk-NsS"/>
+                <constraint firstItem="Hyw-cJ-1WQ" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottomMargin" id="ag1-51-utQ"/>
+                <constraint firstItem="YNu-o2-EH8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bNl-J9-WSt"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="509" y="258"/>
+        </view>
+    </objects>
+</document>

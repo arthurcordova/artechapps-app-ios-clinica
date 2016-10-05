@@ -1,0 +1,24 @@
+{
+  "agendamentos": {
+    "agendamento": [
+      {
+        "codproc": "1",
+        "descproc": "Limpeza de pele",
+        "data": "01/07/2015",
+        "hora": "15:30"
+      },
+      {
+        "codproc": "2",
+        "descproc": "Peeling de cristal",
+        "data": "02/07/2015",
+        "hora": "16:30"
+      },
+      {
+        "codproc": "3",
+        "descproc": "Corrente Russa",
+        "data": "03/07/2015",
+        "hora": "17:30"
+      }
+    ]
+  }
+}

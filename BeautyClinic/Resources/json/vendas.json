@@ -1,0 +1,27 @@
+{
+  "vendas": {
+    "venda": [
+      {
+        "codigo": "1",
+        "data": "01/07/2015",
+        "total": "1530,00",
+        "aberto": "470,00",
+        "status": "A"
+      },
+      {
+        "codigo": "2",
+        "data": "01/07/2015",
+        "total": "30,00",
+        "aberto": "70,00",
+        "status": "A"
+      },
+      {
+        "codigo": "1",
+        "data": "01/07/2015",
+        "total": "15,00",
+        "aberto": "0,00",
+        "status": "P"
+      }
+    ]
+  }
+}
