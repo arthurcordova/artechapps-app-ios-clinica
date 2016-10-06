@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -81,7 +81,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyJ-ys-cu0">
-                    <frame key="frameInset" minX="141" minY="441" width="93" height="30"/>
+                    <frame key="frameInset" minX="141" minY="427" width="93" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="Cancelar">
                         <color key="titleColor" red="0.9137254901960784" green="0.11764705882352941" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -118,6 +118,7 @@
                 <constraint firstAttribute="trailing" secondItem="CJo-hG-Upp" secondAttribute="trailing" constant="53" id="U52-BJ-rFh"/>
                 <constraint firstItem="FUn-Q8-G7t" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YsV-0h-OrG"/>
                 <constraint firstItem="pnt-bM-3g3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dcD-8K-nzq"/>
+                <constraint firstItem="yyJ-ys-cu0" firstAttribute="top" secondItem="FUn-Q8-G7t" secondAttribute="bottom" constant="10" id="hdr-0W-htz"/>
                 <constraint firstItem="AKY-gY-Aiu" firstAttribute="top" secondItem="CJo-hG-Upp" secondAttribute="bottom" constant="36" id="igK-IU-sx5"/>
                 <constraint firstItem="HUJ-S9-bwI" firstAttribute="top" secondItem="OsD-1b-g84" secondAttribute="bottom" constant="16" id="kyj-BL-QQQ"/>
                 <constraint firstItem="VL9-vM-af7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="35" id="sT6-0r-MeG"/>
