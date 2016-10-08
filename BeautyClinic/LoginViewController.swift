@@ -43,10 +43,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             } else {
                 dispatch_sync(dispatch_get_main_queue(), {
                     self.progress.stopAnimating()
-                    let principalViewController = PrincipalViewController(nibName: "PrincipalViewController",
+                    let principalViewController = ControllerMain(nibName: "PrincipalView",
                         bundle: nil)
-                    principalViewController.cliente = Cliente()
-                    principalViewController.cliente = cliente
+//                    principalViewController.cliente = Cliente()
+//                    principalViewController.cliente = cliente
                     self.navigationController!.pushViewController(principalViewController, animated: false)
                 })
             }
