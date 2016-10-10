@@ -17,24 +17,23 @@ class ControllerMain: UITabBarController, UITabBarControllerDelegate {
     }
     
     override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
+        super.viewWillAppear(animated)  
         let viewMensagem = MensagemViewController()
         let viewAgendamento = AgendaViewController()
         let viewProduto = ProdutoViewController()
         let viewOrcamento = OrcamentoViewController()
-// 
-        let tabTitle1 = UITabBarItem(title: "Mensagens", image: UIImage(named: ""), tag: 1)
-        let tabTitle2 = UITabBarItem(title: "Agendamentos", image: UIImage(named: ""), tag: 2)
-        let tabTitle3 = UITabBarItem(title: "Produtos", image: UIImage(named: ""), tag: 3)
-        let tabTitle4 = UITabBarItem(title: "Orçamentos", image: UIImage(named: ""), tag: 4)
-//
+ 
+        let tabTitle1 = UITabBarItem(title: "Mensagens", image: UIImage(named: "ic_message.png"), tag: 1)
+        let tabTitle2 = UITabBarItem(title: "Agendamentos", image: UIImage(named: "ic_event.png"), tag: 2)
+        let tabTitle3 = UITabBarItem(title: "Produtos", image: UIImage(named: "ic_local_offer.png"), tag: 3)
+        let tabTitle4 = UITabBarItem(title: "Orçamentos", image: UIImage(named: "ic_local_atm.png"), tag: 4)
+
         viewMensagem.tabBarItem = tabTitle1
         viewAgendamento.tabBarItem = tabTitle2
         viewProduto.tabBarItem = tabTitle3
         viewOrcamento.tabBarItem = tabTitle4
         
-        let controllers = [viewMensagem, viewAgendamento, viewProduto, viewOrcamento]
-        self.viewControllers = controllers
+        self.viewControllers = [viewMensagem, viewAgendamento, viewProduto, viewOrcamento]
     }
     
     //Delegate methods

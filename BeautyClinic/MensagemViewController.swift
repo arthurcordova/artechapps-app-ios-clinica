@@ -34,7 +34,7 @@ class MensagemViewController: UIViewController, UITableViewDataSource {
     
     override func viewWillAppear(_animated: Bool) {
         super.viewWillAppear(_animated)
-        self.title = "Minhas mensagens"
+        self.title = "Mensagens"
         getMensagens(codCliente)
     }
     

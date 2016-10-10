@@ -31,7 +31,7 @@ class OrcamentoViewController: UIViewController, UITableViewDataSource {
     
     override func viewWillAppear(_animated: Bool) {
         super.viewWillAppear(_animated)        
-        self.title = "Meus Orçamentos"
+        self.title = "Orçamentos"
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

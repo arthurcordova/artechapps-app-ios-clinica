@@ -101,6 +101,18 @@
 		3FFEBD011B2FC78D00C03FE1 /* produtos.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FFEBCFE1B2FC78D00C03FE1 /* produtos.json */; };
 		3FFEBD021B2FC78D00C03FE1 /* login.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FFEBCFF1B2FC78D00C03FE1 /* login.json */; };
 		3FFEBD041B2FC84E00C03FE1 /* agendamentos.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FFEBD031B2FC84E00C03FE1 /* agendamentos.json */; };
+		BD3AC60B1DAC58AD00FD64FB /* ic_message@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3AC6081DAC58AD00FD64FB /* ic_message@2x.png */; };
+		BD3AC60C1DAC58AD00FD64FB /* ic_message@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3AC6091DAC58AD00FD64FB /* ic_message@3x.png */; };
+		BD3AC60D1DAC58AD00FD64FB /* ic_message.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3AC60A1DAC58AD00FD64FB /* ic_message.png */; };
+		BD3AC6111DAC5A2700FD64FB /* ic_event@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3AC60E1DAC5A2700FD64FB /* ic_event@2x.png */; };
+		BD3AC6121DAC5A2700FD64FB /* ic_event@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3AC60F1DAC5A2700FD64FB /* ic_event@3x.png */; };
+		BD3AC6131DAC5A2700FD64FB /* ic_event.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3AC6101DAC5A2700FD64FB /* ic_event.png */; };
+		BD3AC6171DAC5B0F00FD64FB /* ic_local_offer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3AC6141DAC5B0F00FD64FB /* ic_local_offer@2x.png */; };
+		BD3AC6181DAC5B0F00FD64FB /* ic_local_offer@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3AC6151DAC5B0F00FD64FB /* ic_local_offer@3x.png */; };
+		BD3AC6191DAC5B0F00FD64FB /* ic_local_offer.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3AC6161DAC5B0F00FD64FB /* ic_local_offer.png */; };
+		BD3AC61D1DAC5B4700FD64FB /* ic_local_atm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3AC61A1DAC5B4700FD64FB /* ic_local_atm@2x.png */; };
+		BD3AC61E1DAC5B4700FD64FB /* ic_local_atm@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3AC61B1DAC5B4700FD64FB /* ic_local_atm@3x.png */; };
+		BD3AC61F1DAC5B4700FD64FB /* ic_local_atm.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3AC61C1DAC5B4700FD64FB /* ic_local_atm.png */; };
 		BD595ADD1D9B2DC20010C5D0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD595ADC1D9B2DC20010C5D0 /* CardView.swift */; };
 		BD9C9B5E1DA866090094D5FD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9C9B5C1DA866090094D5FD /* FirstViewController.swift */; };
 		BD9C9B5F1DA866090094D5FD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9C9B5D1DA866090094D5FD /* SecondViewController.swift */; };
@@ -218,6 +230,18 @@
 		3FFEBCFE1B2FC78D00C03FE1 /* produtos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = produtos.json; sourceTree = "<group>"; };
 		3FFEBCFF1B2FC78D00C03FE1 /* login.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = login.json; sourceTree = "<group>"; };
 		3FFEBD031B2FC84E00C03FE1 /* agendamentos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = agendamentos.json; sourceTree = "<group>"; };
+		BD3AC6081DAC58AD00FD64FB /* ic_message@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_message@2x.png"; path = "BeautyClinic/Images.xcassets/AppIcon.appiconset/ic_message@2x.png"; sourceTree = SOURCE_ROOT; };
+		BD3AC6091DAC58AD00FD64FB /* ic_message@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_message@3x.png"; path = "BeautyClinic/Images.xcassets/AppIcon.appiconset/ic_message@3x.png"; sourceTree = SOURCE_ROOT; };
+		BD3AC60A1DAC58AD00FD64FB /* ic_message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_message.png; path = BeautyClinic/Images.xcassets/AppIcon.appiconset/ic_message.png; sourceTree = SOURCE_ROOT; };
+		BD3AC60E1DAC5A2700FD64FB /* ic_event@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_event@2x.png"; path = "../../../../ic_event_black_24dp/ios/ic_event.imageset/ic_event@2x.png"; sourceTree = "<group>"; };
+		BD3AC60F1DAC5A2700FD64FB /* ic_event@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_event@3x.png"; path = "../../../../ic_event_black_24dp/ios/ic_event.imageset/ic_event@3x.png"; sourceTree = "<group>"; };
+		BD3AC6101DAC5A2700FD64FB /* ic_event.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_event.png; path = ../../../../ic_event_black_24dp/ios/ic_event.imageset/ic_event.png; sourceTree = "<group>"; };
+		BD3AC6141DAC5B0F00FD64FB /* ic_local_offer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_local_offer@2x.png"; path = "../../../../ic_local_offer_black_24dp/ios/ic_local_offer.imageset/ic_local_offer@2x.png"; sourceTree = "<group>"; };
+		BD3AC6151DAC5B0F00FD64FB /* ic_local_offer@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_local_offer@3x.png"; path = "../../../../ic_local_offer_black_24dp/ios/ic_local_offer.imageset/ic_local_offer@3x.png"; sourceTree = "<group>"; };
+		BD3AC6161DAC5B0F00FD64FB /* ic_local_offer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_local_offer.png; path = ../../../../ic_local_offer_black_24dp/ios/ic_local_offer.imageset/ic_local_offer.png; sourceTree = "<group>"; };
+		BD3AC61A1DAC5B4700FD64FB /* ic_local_atm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_local_atm@2x.png"; path = "../../../../ic_local_atm_black_24dp/ios/ic_local_atm.imageset/ic_local_atm@2x.png"; sourceTree = "<group>"; };
+		BD3AC61B1DAC5B4700FD64FB /* ic_local_atm@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_local_atm@3x.png"; path = "../../../../ic_local_atm_black_24dp/ios/ic_local_atm.imageset/ic_local_atm@3x.png"; sourceTree = "<group>"; };
+		BD3AC61C1DAC5B4700FD64FB /* ic_local_atm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_local_atm.png; path = ../../../../ic_local_atm_black_24dp/ios/ic_local_atm.imageset/ic_local_atm.png; sourceTree = "<group>"; };
 		BD595ADC1D9B2DC20010C5D0 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		BD9C9B5C1DA866090094D5FD /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = ../../../Mobile/IOS/teste/teste/FirstViewController.swift; sourceTree = "<group>"; };
 		BD9C9B5D1DA866090094D5FD /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = ../../../Mobile/IOS/teste/teste/SecondViewController.swift; sourceTree = "<group>"; };
@@ -386,6 +410,18 @@
 		3FFEBCD71B2F98E400C03FE1 /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
+				BD3AC61A1DAC5B4700FD64FB /* ic_local_atm@2x.png */,
+				BD3AC61B1DAC5B4700FD64FB /* ic_local_atm@3x.png */,
+				BD3AC61C1DAC5B4700FD64FB /* ic_local_atm.png */,
+				BD3AC6141DAC5B0F00FD64FB /* ic_local_offer@2x.png */,
+				BD3AC6151DAC5B0F00FD64FB /* ic_local_offer@3x.png */,
+				BD3AC6161DAC5B0F00FD64FB /* ic_local_offer.png */,
+				BD3AC60E1DAC5A2700FD64FB /* ic_event@2x.png */,
+				BD3AC60F1DAC5A2700FD64FB /* ic_event@3x.png */,
+				BD3AC6101DAC5A2700FD64FB /* ic_event.png */,
+				BD3AC6081DAC58AD00FD64FB /* ic_message@2x.png */,
+				BD3AC6091DAC58AD00FD64FB /* ic_message@3x.png */,
+				BD3AC60A1DAC58AD00FD64FB /* ic_message.png */,
 				3FFD795A1B8A000100FDFF2B /* agendamentos.png */,
 				3FFD795B1B8A000100FDFF2B /* agendamentos@2x.png */,
 				3FFD795C1B8A000100FDFF2B /* agendar.png */,
@@ -511,6 +547,7 @@
 				3FF961881B54BAD800E7D7A8 /* OrcamentoCell.xib in Resources */,
 				3FFD796D1B8A000100FDFF2B /* procedimentos@2x.png in Resources */,
 				3F15B7BF1B57510100CBF7C5 /* ProdOrcamentoCell.xib in Resources */,
+				BD3AC6111DAC5A2700FD64FB /* ic_event@2x.png in Resources */,
 				3FFEBD001B2FC78D00C03FE1 /* carros_classicos.json in Resources */,
 				3FFD796B1B8A000100FDFF2B /* orcamentos@2x.png in Resources */,
 				3F54A33C1BA4798400383429 /* AgendarViewController.xib in Resources */,
@@ -520,14 +557,21 @@
 				3FD199251BA88E9B0013BE4E /* PesquisaProdViewController.xib in Resources */,
 				3F7095A51D24BE06000E5670 /* CadUsuarioViewController.xib in Resources */,
 				3FD5A2B81BA70A1300B9F4B9 /* MensagemViewController.xib in Resources */,
+				BD3AC6131DAC5A2700FD64FB /* ic_event.png in Resources */,
 				3FE34ED41B5753B3003A254D /* DetalheOrcViewController.xib in Resources */,
 				3FFD796A1B8A000100FDFF2B /* orcamentos.png in Resources */,
 				3FFD796E1B8A000100FDFF2B /* promocoes.png in Resources */,
+				BD3AC61F1DAC5B4700FD64FB /* ic_local_atm.png in Resources */,
 				3FD199191BA856C10013BE4E /* HorarioCell.xib in Resources */,
+				BD3AC6181DAC5B0F00FD64FB /* ic_local_offer@3x.png in Resources */,
+				BD3AC60D1DAC58AD00FD64FB /* ic_message.png in Resources */,
 				3FF961861B54B46600E7D7A8 /* OrcamentoViewController.xib in Resources */,
 				3FFEBD041B2FC84E00C03FE1 /* agendamentos.json in Resources */,
+				BD3AC61E1DAC5B4700FD64FB /* ic_local_atm@3x.png in Resources */,
 				3FFD79691B8A000100FDFF2B /* agendar@2x.png in Resources */,
 				3F9EF3241B49A5EC00853DA0 /* procedimento.png in Resources */,
+				BD3AC60B1DAC58AD00FD64FB /* ic_message@2x.png in Resources */,
+				BD3AC6171DAC5B0F00FD64FB /* ic_local_offer@2x.png in Resources */,
 				3FA0F3601BD458BF00E6B974 /* CarrinhoCell.xib in Resources */,
 				3FD5A2CC1BA7454F00B9F4B9 /* DetalheMsgViewController.xib in Resources */,
 				3F9248891BAF0CC600BEB1B0 /* PrincipalViewController.xib in Resources */,
@@ -539,13 +583,17 @@
 				BD9C9B621DA866150094D5FD /* Main.storyboard in Resources */,
 				3F0295641B43868A009510E4 /* ProdutoCell.xib in Resources */,
 				3F273AC41B35D06C00267B0B /* AgendaViewController.xib in Resources */,
+				BD3AC6191DAC5B0F00FD64FB /* ic_local_offer.png in Resources */,
 				3F66CA3A1B44DF2E00A78C64 /* avisos.json in Resources */,
+				BD3AC6121DAC5A2700FD64FB /* ic_event@3x.png in Resources */,
 				3F5EFF481BC1786000D9C411 /* envelope@2x.png in Resources */,
 				3FD5A2C61BA7192800B9F4B9 /* MensagemCell.xib in Resources */,
 				3FFD796C1B8A000100FDFF2B /* procedimentos.png in Resources */,
 				3FFD79671B8A000100FDFF2B /* agendamentos@2x.png in Resources */,
 				3F1B62211B38FED60090E5C9 /* VendaCell.xib in Resources */,
 				3FFEBCF71B2F994F00C03FE1 /* LoginViewController.xib in Resources */,
+				BD3AC60C1DAC58AD00FD64FB /* ic_message@3x.png in Resources */,
+				BD3AC61D1DAC5B4700FD64FB /* ic_local_atm@2x.png in Resources */,
 				3FFD79711B8A000100FDFF2B /* sair@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
