@@ -23,12 +23,15 @@ class ControllerMain: UITabBarController, UITabBarControllerDelegate {
         let viewProduto = ProdutoViewController()
         let viewOrcamento = OrcamentoViewController()
 // 
-//        let iconMensagem = UITabBarItem(title: "Mensagens", image: UIImage(named: "envelope.png"), selectedImage: UIImage(named: "envelope.png"))
-//        
-//        viewMensagem.tabBarItem = iconMensagem
-//        viewAgendamento.tabBarItem = iconMensagem
-//        viewProduto.tabBarItem = iconMensagem
-//        viewOrcamento.tabBarItem = iconMensagem
+        let tabTitle1 = UITabBarItem(title: "Mensagens", image: UIImage(named: ""), tag: 1)
+        let tabTitle2 = UITabBarItem(title: "Agendamentos", image: UIImage(named: ""), tag: 2)
+        let tabTitle3 = UITabBarItem(title: "Produtos", image: UIImage(named: ""), tag: 3)
+        let tabTitle4 = UITabBarItem(title: "Orçamentos", image: UIImage(named: ""), tag: 4)
+//
+        viewMensagem.tabBarItem = tabTitle1
+        viewAgendamento.tabBarItem = tabTitle2
+        viewProduto.tabBarItem = tabTitle3
+        viewOrcamento.tabBarItem = tabTitle4
         
         let controllers = [viewMensagem, viewAgendamento, viewProduto, viewOrcamento]
         self.viewControllers = controllers
