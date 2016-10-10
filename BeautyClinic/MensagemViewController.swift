@@ -17,7 +17,7 @@ class MensagemViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Minhas mensagens"
+        self.title = "Mensagens"
         self.navigationController!.setNavigationBarHidden(false, animated: false)
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         let xib = UINib(nibName: "MensagemCell", bundle: nil)
