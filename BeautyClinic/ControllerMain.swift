@@ -9,6 +9,7 @@
 import UIKit
 
 class ControllerMain: UITabBarController {
+    @IBOutlet var tabs1: UIViewController!
 
     
     

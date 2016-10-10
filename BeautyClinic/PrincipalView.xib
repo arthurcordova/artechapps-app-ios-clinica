@@ -8,26 +8,26 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tabBarController id="rjO-d7-wxu">
-            <tabBar key="tabBar" contentMode="scaleToFill" id="BG2-d7-k9B">
+        <tabBarController id="rjO-d7-wxu" customClass="ControllerMain" customModule="BeautyClinic" customModuleProvider="target">
+            <tabBar key="tabBar" contentMode="scaleToFill" selectedItem="FGH-3N-Iz8" id="BG2-d7-k9B">
                 <rect key="frame" x="0.0" y="618" width="375" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </tabBar>
             <viewControllers>
-                <viewController id="ksw-mM-I7S">
+                <viewController id="ksw-mM-I7S" userLabel="tabs 1">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xwx-vR-fOE"/>
                         <viewControllerLayoutGuide type="bottom" id="Gg0-nf-oSC"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="D7S-Ff-3AU">
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="D7S-Ff-3AU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="FGH-3N-Iz8"/>
                 </viewController>
-                <viewController id="4xj-Mv-a1q">
+                <viewController id="4xj-Mv-a1q" userLabel="tabs 2">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wfF-Iy-0gj"/>
                         <viewControllerLayoutGuide type="bottom" id="E15-33-md8"/>
@@ -39,7 +39,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="9Ii-6E-JQG"/>
                 </viewController>
-                <viewController id="h1h-Em-xA1">
+                <viewController id="h1h-Em-xA1" userLabel="tabs 3">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7Cz-rb-xbv"/>
                         <viewControllerLayoutGuide type="bottom" id="UuP-YY-MLL"/>
@@ -51,7 +51,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="tYG-sQ-m1q"/>
                 </viewController>
-                <viewController id="jh7-0T-b2w">
+                <viewController id="jh7-0T-b2w" userLabel="tabs 4">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rwi-ht-x8M"/>
                         <viewControllerLayoutGuide type="bottom" id="peI-rt-BvH"/>
@@ -64,6 +64,9 @@
                     <tabBarItem key="tabBarItem" title="Item" id="gRm-h7-BCC"/>
                 </viewController>
             </viewControllers>
+            <connections>
+                <outlet property="tabs1" destination="ksw-mM-I7S" id="r5V-Gz-7xG"/>
+            </connections>
             <point key="canvasLocation" x="243" y="258"/>
         </tabBarController>
     </objects>
