@@ -22,18 +22,21 @@ class ControllerMain: UITabBarController, UITabBarControllerDelegate {
         let viewAgendamento = AgendaViewController()
         let viewProduto = ProdutoViewController()
         let viewOrcamento = OrcamentoViewController()
+        let viewCarrinho = CarrinhoViewController()
  
         let tabTitle1 = UITabBarItem(title: "Mensagens", image: UIImage(named: "ic_message.png"), tag: 1)
         let tabTitle2 = UITabBarItem(title: "Agendamentos", image: UIImage(named: "ic_event.png"), tag: 2)
         let tabTitle3 = UITabBarItem(title: "Produtos", image: UIImage(named: "ic_local_offer.png"), tag: 3)
         let tabTitle4 = UITabBarItem(title: "Orçamentos", image: UIImage(named: "ic_local_atm.png"), tag: 4)
+        let tabTitle5 = UITabBarItem(title: "Carrinho", image: UIImage(named: "ic_shopping_cart.png"), tag: 5)
 
         viewMensagem.tabBarItem = tabTitle1
         viewAgendamento.tabBarItem = tabTitle2
         viewProduto.tabBarItem = tabTitle3
         viewOrcamento.tabBarItem = tabTitle4
+        viewCarrinho.tabBarItem = tabTitle5
         
-        self.viewControllers = [viewMensagem, viewAgendamento, viewProduto, viewOrcamento]
+        self.viewControllers = [viewMensagem, viewAgendamento, viewProduto, viewOrcamento, viewCarrinho]
     }
     
     //Delegate methods

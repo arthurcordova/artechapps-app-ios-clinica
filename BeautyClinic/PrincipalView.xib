@@ -99,6 +99,27 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="gRm-h7-BCC"/>
                 </viewController>
+                <viewController id="XjJ-eC-Veq" userLabel="tabs 5">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wN2-6g-Hin"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fV-91-cND"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yGM-dA-8vE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tab 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qd-xm-SB1">
+                                <frame key="frameInset" minX="169" minY="323" width="37" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="kdy-wA-yQP"/>
+                </viewController>
             </viewControllers>
             <connections>
                 <outlet property="tabs1" destination="ksw-mM-I7S" id="r5V-Gz-7xG"/>
