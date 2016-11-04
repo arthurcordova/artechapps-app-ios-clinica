@@ -117,9 +117,6 @@
 		BD961B1B1DBBC9F7000421BE /* ic_shopping_cart_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD961B181DBBC9F6000421BE /* ic_shopping_cart_2x.png */; };
 		BD961B1C1DBBC9F7000421BE /* ic_shopping_cart_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD961B191DBBC9F6000421BE /* ic_shopping_cart_3x.png */; };
 		BD961B1D1DBBC9F7000421BE /* ic_shopping_cart.png in Resources */ = {isa = PBXBuildFile; fileRef = BD961B1A1DBBC9F6000421BE /* ic_shopping_cart.png */; };
-		BD9C9B5E1DA866090094D5FD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9C9B5C1DA866090094D5FD /* FirstViewController.swift */; };
-		BD9C9B5F1DA866090094D5FD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9C9B5D1DA866090094D5FD /* SecondViewController.swift */; };
-		BD9C9B621DA866150094D5FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD9C9B601DA866150094D5FD /* Main.storyboard */; };
 		BD9C9B661DA86E170094D5FD /* PrincipalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD9C9B651DA86E170094D5FD /* PrincipalView.xib */; };
 		BD9C9B681DA86FCF0094D5FD /* ControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9C9B671DA86FCF0094D5FD /* ControllerMain.swift */; };
 /* End PBXBuildFile section */
@@ -249,9 +246,6 @@
 		BD961B181DBBC9F6000421BE /* ic_shopping_cart_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_shopping_cart_2x.png; sourceTree = "<group>"; };
 		BD961B191DBBC9F6000421BE /* ic_shopping_cart_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_shopping_cart_3x.png; sourceTree = "<group>"; };
 		BD961B1A1DBBC9F6000421BE /* ic_shopping_cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_shopping_cart.png; sourceTree = "<group>"; };
-		BD9C9B5C1DA866090094D5FD /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = ../../../Mobile/IOS/teste/teste/FirstViewController.swift; sourceTree = "<group>"; };
-		BD9C9B5D1DA866090094D5FD /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = ../../../Mobile/IOS/teste/teste/SecondViewController.swift; sourceTree = "<group>"; };
-		BD9C9B611DA866150094D5FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../Mobile/IOS/teste/teste/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD9C9B651DA86E170094D5FD /* PrincipalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrincipalView.xib; sourceTree = "<group>"; };
 		BD9C9B671DA86FCF0094D5FD /* ControllerMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerMain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -298,9 +292,6 @@
 				3FFEBCD61B2F98E400C03FE1 /* Resources */,
 				3FFEBCB61B2F949500C03FE1 /* AppDelegate.swift */,
 				3FADF9281D33461800C3F1F1 /* DatePickerDialog.swift */,
-				BD9C9B5C1DA866090094D5FD /* FirstViewController.swift */,
-				BD9C9B601DA866150094D5FD /* Main.storyboard */,
-				BD9C9B5D1DA866090094D5FD /* SecondViewController.swift */,
 				3FD199261BA890FA0013BE4E /* UtilProtocol.swift */,
 				3F30502A1D373A4600719913 /* MedicoService.swift */,
 				3FACB6111BD297EC0092826B /* VendaProtocol.swift */,
@@ -508,7 +499,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Matheus Nonaka";
 				TargetAttributes = {
 					3FFEBCB01B2F949500C03FE1 = {
@@ -591,7 +582,6 @@
 				3F5EFF471BC1786000D9C411 /* envelope.png in Resources */,
 				3FFD79681B8A000100FDFF2B /* agendar.png in Resources */,
 				3FFEBCC11B2F949500C03FE1 /* LaunchScreen.xib in Resources */,
-				BD9C9B621DA866150094D5FD /* Main.storyboard in Resources */,
 				3F0295641B43868A009510E4 /* ProdutoCell.xib in Resources */,
 				3F273AC41B35D06C00267B0B /* AgendaViewController.xib in Resources */,
 				BD3AC6191DAC5B0F00FD64FB /* ic_local_offer.png in Resources */,
@@ -655,7 +645,6 @@
 				3F54A33B1BA4798400383429 /* AgendarViewController.swift in Sources */,
 				3FD5A2CB1BA7454F00B9F4B9 /* DetalheMsgViewController.swift in Sources */,
 				3FC20D801B4F697300A3A697 /* Orcamento.swift in Sources */,
-				BD9C9B5E1DA866090094D5FD /* FirstViewController.swift in Sources */,
 				3FA0F35E1BD457CE00E6B974 /* CarrinhoCell.swift in Sources */,
 				3F0295621B438660009510E4 /* ProdutoCell.swift in Sources */,
 				3FC20D821B4F6AF400A3A697 /* OrcamentoService.swift in Sources */,
@@ -666,7 +655,6 @@
 				3FD5A2B71BA70A1300B9F4B9 /* MensagemViewController.swift in Sources */,
 				3FACB6121BD297EC0092826B /* VendaProtocol.swift in Sources */,
 				3F9248881BAF0CC600BEB1B0 /* PrincipalViewController.swift in Sources */,
-				BD9C9B5F1DA866090094D5FD /* SecondViewController.swift in Sources */,
 				3FD199241BA88E9B0013BE4E /* PesquisaProdViewController.swift in Sources */,
 				3F66CA381B44DBC700A78C64 /* Utils.swift in Sources */,
 				3F7095A71D24C09D000E5670 /* CadastroService.swift in Sources */,
@@ -707,14 +695,6 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
-		BD9C9B601DA866150094D5FD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BD9C9B611DA866150094D5FD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -731,8 +711,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -741,6 +723,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -776,8 +759,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -785,6 +770,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -795,6 +781,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				"SWIFT_OBJC_BRIDGING_HEADER[sdk=iphoneos*]" = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -812,12 +799,13 @@
 				INFOPLIST_FILE = BeautyClinic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.bwn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -833,11 +821,12 @@
 				INFOPLIST_FILE = BeautyClinic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.bwn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
