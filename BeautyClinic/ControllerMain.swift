@@ -10,6 +10,8 @@ import UIKit
 
 class ControllerMain: UITabBarController, UITabBarControllerDelegate {
  
+    var cliente: Cliente!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
@@ -19,7 +21,10 @@ class ControllerMain: UITabBarController, UITabBarControllerDelegate {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)  
         let viewMensagem = MensagemViewController()
+        
         let viewAgendamento = AgendaViewController()
+        viewAgendamento.cliente = cliente
+        
         let viewProduto = ProdutoViewController()
         let viewOrcamento = OrcamentoViewController()
         let viewCarrinho = CarrinhoViewController()

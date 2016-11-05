@@ -13,7 +13,7 @@ class AgendaService {
     class func getAgendamentos(callback: (agendamentos: Array<Agendamento>, error: NSError!) -> Void, codCliente: String) {
         
         let http = NSURLSession.sharedSession()
-        let url = NSURL(string: "http://www2.beautyclinic.com.br/clinwebservice/servidor/agendamentos/"+codCliente)!
+        let url = NSURL(string: "http://www2.beautyclinic.com.br/clinwebservice2/servidor/agendamentos/"+codCliente)!
         let task = http.dataTaskWithURL(url, completionHandler: {
             (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
             if (error != nil) {

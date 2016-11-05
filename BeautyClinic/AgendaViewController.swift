@@ -13,6 +13,7 @@ class AgendaViewController: UIViewController, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
     var agendamentos: Array<Agendamento> = []
     var codCliente: String = ""
+    var cliente : Cliente!
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,7 @@ class AgendaViewController: UIViewController, UITableViewDataSource {
         let xib = UINib(nibName: "AgendaCell", bundle: nil)
         self.tableView.registerNib(xib, forCellReuseIdentifier: "cell")
         
+        self.codCliente = String(cliente.codCliente)
         getAgendamentos(self.codCliente)
     }
     

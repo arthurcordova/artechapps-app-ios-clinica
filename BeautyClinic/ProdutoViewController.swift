@@ -90,7 +90,8 @@ class ProdutoViewController: UIViewController, UITableViewDataSource {
             addAlerta.addAction(UIAlertAction(title: "Não", style: .Cancel, handler: nil))
             
             addAlerta.addTextFieldWithConfigurationHandler({(textField: UITextField!) in
-                textField.placeholder = "Informe a quantidade"
+                textField.text = "1"
+                //textField.placeholder = "Informe a quantidade"
                 qtdField = textField
             })
             
