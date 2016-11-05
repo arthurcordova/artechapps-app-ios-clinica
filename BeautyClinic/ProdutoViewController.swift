@@ -57,8 +57,14 @@ class ProdutoViewController: UIViewController, UITableViewDataSource {
             let linha = indexPath.row
             let produto = self.produtos[linha]
             
+            let price:NSNumber = produto.preco
+            let formatter = NSNumberFormatter()
+            formatter.numberStyle = .CurrencyStyle
+            formatter.locale = NSLocale(localeIdentifier: "pt_BR")
+            
             cell.descProduto.text = produto.descricao
-            cell.precoProduto.text = "R$ \(produto.preco)"
+            cell.precoProduto.text = formatter.stringFromNumber(price);
+            //cell.precoProduto.text = "R$ \(produto.preco)"
             
             return cell
     }
