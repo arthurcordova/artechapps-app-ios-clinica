@@ -13,6 +13,7 @@ class OrcamentoViewController: UIViewController, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
     var codCliente: String = "0"
     var orcamentos: Array<Orcamento> = []
+    var cliente: Cliente!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,7 @@ class OrcamentoViewController: UIViewController, UITableViewDataSource {
         let xib = UINib(nibName: "OrcamentoCell", bundle: nil)
         self.tableView.registerNib(xib, forCellReuseIdentifier: "cell")
         
+        codCliente = String(cliente.codCliente)
         getOrcamentos(codCliente)
     }
 

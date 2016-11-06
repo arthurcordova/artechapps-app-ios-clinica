@@ -26,7 +26,10 @@ class ControllerMain: UITabBarController, UITabBarControllerDelegate {
         viewAgendamento.cliente = cliente
         
         let viewProduto = ProdutoViewController()
+        
         let viewOrcamento = OrcamentoViewController()
+        viewOrcamento.cliente = cliente
+        
         let viewCarrinho = CarrinhoViewController()
  
         let tabTitle1 = UITabBarItem(title: "Mensagens", image: UIImage(named: "ic_message.png"), tag: 1)
