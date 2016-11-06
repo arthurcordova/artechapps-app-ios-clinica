@@ -38,7 +38,7 @@ class OrcamentoViewController: UIViewController, UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return orcamentos.count
-    }
+    }   
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)
         -> UITableViewCell {
@@ -47,9 +47,17 @@ class OrcamentoViewController: UIViewController, UITableViewDataSource {
             let linha = indexPath.row
             let orcamento = self.orcamentos[linha]
             
+            
+            let price:NSNumber = orcamento.valorTotal - orcamento.desconto
+            let formatter = NSNumberFormatter()
+            formatter.numberStyle = .CurrencyStyle
+            formatter.locale = NSLocale(localeIdentifier: "pt_BR")
+            
+            var numberFormat :String = formatter.stringFromNumber(price)!;
+            
             cell.codOrcamento.text = "Código: \(orcamento.codigo)"
-            cell.dataOrcamento.text = "Data: " + orcamento.data
-            cell.valorOrcamento.text = "Valor: R$ \(orcamento.valorTotal - orcamento.desconto)"
+            cell.dataOrcamento.text = "Valor: \(numberFormat)"
+            cell.valorOrcamento.text = "Data: " + orcamento.data
             
             return cell
     }
