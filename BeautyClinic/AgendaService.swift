@@ -45,7 +45,7 @@ class AgendaService {
                 let agendamento = Agendamento()
                 agendamento.codProcedimento = dict["codProcedimento"] as! Int
                 agendamento.descProcedimento = dict["descProcedimento"] as! String
-                //agendamento.data = dict["data"] as! String
+                agendamento.data = dict["data"] as! String
                 agendamento.horario = dict["horario"] as! String
                 agendamento.status = dict["status"] as! String
                 agendamento.codAgenda = dict["codAgenda"] as! Int

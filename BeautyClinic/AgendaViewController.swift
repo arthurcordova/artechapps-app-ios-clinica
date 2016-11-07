@@ -45,7 +45,7 @@ class AgendaViewController: UIViewController, UITableViewDataSource {
             let agendamento = self.agendamentos[linha]
             
             cell.descAgenda.text = agendamento.descProcedimento
-            cell.dataAgenda.text = agendamento.data + " " + agendamento.horario
+            cell.dataAgenda.text = "Data: " + agendamento.data + "  Horário: " + agendamento.horario
             
             return cell
     }
