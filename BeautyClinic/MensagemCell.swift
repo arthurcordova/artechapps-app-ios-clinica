@@ -13,7 +13,10 @@ class MensagemCell: UITableViewCell {
     
     @IBOutlet var titulo: UILabel!
     @IBOutlet var data: UILabel!
+    @IBOutlet var menssagem: UILabel!
+    
     var id: Int = 0
     var mensagem: String = ""
+
     
 }

@@ -504,6 +504,7 @@
 				TargetAttributes = {
 					3FFEBCB01B2F949500C03FE1 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = T4H78CRT5T;
 						LastSwiftMigration = 0800;
 					};
 					3FFEBCC51B2F949500C03FE1 = {
@@ -794,7 +795,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = T4H78CRT5T;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = BeautyClinic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -816,7 +817,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = T4H78CRT5T;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = BeautyClinic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

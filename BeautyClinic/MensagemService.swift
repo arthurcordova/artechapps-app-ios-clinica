@@ -45,7 +45,7 @@ class MensagemService {
     class func getMensagens(callback: (mensagens: Array<Mensagem>, error: NSError!) -> Void, codCliente: String) {
         
         let http = NSURLSession.sharedSession()
-        let url = NSURL(string: "http://www2.beautyclinic.com.br/clinwebservice/servidor/msgsporcliente/1295")!
+        let url = NSURL(string: "http://www2.beautyclinic.com.br/clinwebservice/servidor/msgsporcliente/4096")!
         let task = http.dataTaskWithURL(url, completionHandler: {
             (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
             if (error != nil) {

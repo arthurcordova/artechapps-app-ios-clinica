@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,21 +19,46 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KyE-lj-5BQ">
-                        <rect key="frame" x="8" y="0.0" width="256" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
-                        <color key="textColor" red="0.51006340980529785" green="0.15324558317661285" blue="0.71798288822174072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KyE-lj-5BQ">
+                        <rect key="frame" x="231" y="43" width="75" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="Ob5-QL-fT1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EG-6M-kkf">
-                        <rect key="frame" x="8" y="22" width="256" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EG-6M-kkf">
+                        <rect key="frame" x="15" y="8" width="256" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="256" id="B4y-ZC-LRg"/>
+                        </constraints>
                         <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
-                        <color key="textColor" red="0.51006340980529785" green="0.15324558317661285" blue="0.71798288822174072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCq-Rf-qZh">
+                        <rect key="frame" x="15" y="44" width="222" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="222" id="iJ0-oU-UwC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                        <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="OCq-Rf-qZh" firstAttribute="leading" secondItem="gUw-Em-iug" secondAttribute="leading" constant="15" id="2X0-Ud-tIP"/>
+                    <constraint firstItem="KyE-lj-5BQ" firstAttribute="top" secondItem="7EG-6M-kkf" secondAttribute="bottom" constant="14" id="2m1-v9-d3C"/>
+                    <constraint firstAttribute="bottom" secondItem="OCq-Rf-qZh" secondAttribute="bottom" constant="7" id="4Y1-JE-jgP"/>
+                    <constraint firstAttribute="trailing" secondItem="OCq-Rf-qZh" secondAttribute="trailing" constant="83" id="LUe-3A-cPL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7EG-6M-kkf" secondAttribute="trailing" constant="41" id="VeV-aZ-Kwm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="KyE-lj-5BQ" secondAttribute="trailing" constant="6" id="WaU-OW-CYM"/>
+                    <constraint firstItem="OCq-Rf-qZh" firstAttribute="top" secondItem="7EG-6M-kkf" secondAttribute="bottom" constant="15" id="eKc-X7-6AE"/>
+                    <constraint firstItem="KyE-lj-5BQ" firstAttribute="top" secondItem="7EG-6M-kkf" secondAttribute="bottom" constant="14" id="lbN-dX-hvZ"/>
+                    <constraint firstItem="KyE-lj-5BQ" firstAttribute="leading" secondItem="gUw-Em-iug" secondAttribute="leadingMargin" constant="223" id="woP-Jb-N3b"/>
+                    <constraint firstItem="7EG-6M-kkf" firstAttribute="leading" secondItem="gUw-Em-iug" secondAttribute="leadingMargin" constant="7" id="zAh-43-1qZ"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="data" destination="KyE-lj-5BQ" id="ksb-Rq-7xM"/>
