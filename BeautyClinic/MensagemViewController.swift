@@ -50,8 +50,9 @@ class MensagemViewController: UIViewController, UITableViewDataSource {
             let mensagem = self.mensagens[linha]
             
             cell.id = mensagem.id
-            cell.data.text = "Data: \(mensagem.dataEnvio)"
+            cell.data.text = mensagem.dataEnvio
             cell.titulo.text = mensagem.titulo
+            cell.Msg.text = mensagem.mensagem
             cell.mensagem = mensagem.mensagem
             
             return cell
