@@ -10,11 +10,9 @@ import UIKit
 
 class DetalheMsgViewController: UIViewController {
     
-    @IBOutlet var tfTitulo: UITextField!
-    @IBOutlet var tfAutor: UITextField!
-    @IBOutlet var tvMensagem: UITextView!
+   
     
-    var idMensagem: Int = 0
+    var idMensagem: Int     = 0
     
     var titulo: String = ""
     var autor: String = ""
@@ -33,10 +31,12 @@ class DetalheMsgViewController: UIViewController {
         super.viewDidLoad()
         
         self.title = "Detalhes da mensagem"
+        /*
         self.tfTitulo.text = titulo
         self.tfAutor.text = autor
         self.tvMensagem.text = mensagem
         self.tvMensagem.editable = false
+ */
 
     }
 

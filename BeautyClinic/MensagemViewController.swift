@@ -34,6 +34,7 @@ class MensagemViewController: UIViewController, UITableViewDataSource {
     
     override func viewWillAppear(_animated: Bool) {
         super.viewWillAppear(_animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.title = "Mensagens"
         getMensagens(codCliente)
     }
@@ -63,11 +64,17 @@ class MensagemViewController: UIViewController, UITableViewDataSource {
         let linha = indexPath.row
         let mensagem = self.mensagens[linha]
         
-        let detalheView = DetalheMsgViewController(nibName: "DetalheMsgViewController", bundle: nil)
-        detalheView.idMensagem = mensagem.idMsgCliente
-        detalheView.autor = mensagem.autor
+        let detalheView = DetalheMensagemViewController(nibName: "DetalheMensagemViewController", bundle: nil)
+        
         detalheView.titulo = mensagem.titulo
         detalheView.mensagem = mensagem.mensagem
+        detalheView.data = mensagem.dataEnvio
+        detalheView.codigo = mensagem.idMsgCliente
+        
+        //detalheView.idMensagem = mensagem.idMsgCliente
+        //detalheView.autor = mensagem.autor
+        //detalheView.titulo = mensagem.titulo
+        //detalheView.mensagem = mensagem.mensagem
         
         self.navigationItem.title = ""
         self.navigationController!.pushViewController(detalheView, animated: true)

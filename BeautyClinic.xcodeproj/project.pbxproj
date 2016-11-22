@@ -38,7 +38,6 @@
 		3F66CA381B44DBC700A78C64 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F66CA371B44DBC700A78C64 /* Utils.swift */; };
 		3F66CA3A1B44DF2E00A78C64 /* avisos.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F66CA391B44DF2E00A78C64 /* avisos.json */; };
 		3F6756CD1B659B0E006B9154 /* Cliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6756CC1B659B0E006B9154 /* Cliente.swift */; };
-		3F6E56811BAA017E00F3C831 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F6E56801BAA017E00F3C831 /* Images.xcassets */; };
 		3F7095A41D24BE06000E5670 /* CadUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7095A21D24BE06000E5670 /* CadUsuarioViewController.swift */; };
 		3F7095A51D24BE06000E5670 /* CadUsuarioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F7095A31D24BE06000E5670 /* CadUsuarioViewController.xib */; };
 		3F7095A71D24C09D000E5670 /* CadastroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7095A61D24C09D000E5670 /* CadastroService.swift */; };
@@ -71,7 +70,6 @@
 		3FD5A2C61BA7192800B9F4B9 /* MensagemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FD5A2C51BA7192800B9F4B9 /* MensagemCell.xib */; };
 		3FD5A2C81BA71C1F00B9F4B9 /* MensagemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD5A2C71BA71C1F00B9F4B9 /* MensagemService.swift */; };
 		3FD5A2CB1BA7454F00B9F4B9 /* DetalheMsgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD5A2C91BA7454F00B9F4B9 /* DetalheMsgViewController.swift */; };
-		3FD5A2CC1BA7454F00B9F4B9 /* DetalheMsgViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FD5A2CA1BA7454F00B9F4B9 /* DetalheMsgViewController.xib */; };
 		3FE34ED31B5753B3003A254D /* DetalheOrcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE34ED11B5753B3003A254D /* DetalheOrcViewController.swift */; };
 		3FE34ED41B5753B3003A254D /* DetalheOrcViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FE34ED21B5753B3003A254D /* DetalheOrcViewController.xib */; };
 		3FF961851B54B46600E7D7A8 /* OrcamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF961831B54B46600E7D7A8 /* OrcamentoViewController.swift */; };
@@ -119,6 +117,9 @@
 		BD961B1D1DBBC9F7000421BE /* ic_shopping_cart.png in Resources */ = {isa = PBXBuildFile; fileRef = BD961B1A1DBBC9F6000421BE /* ic_shopping_cart.png */; };
 		BD9C9B661DA86E170094D5FD /* PrincipalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD9C9B651DA86E170094D5FD /* PrincipalView.xib */; };
 		BD9C9B681DA86FCF0094D5FD /* ControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9C9B671DA86FCF0094D5FD /* ControllerMain.swift */; };
+		F42C59EE1DE3B518009C61A8 /* DetalheMensagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42C59EC1DE3B518009C61A8 /* DetalheMensagemViewController.swift */; };
+		F42C59EF1DE3B518009C61A8 /* DetalheMensagemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42C59ED1DE3B518009C61A8 /* DetalheMensagemViewController.xib */; };
+		F42C59FB1DE4FB1E009C61A8 /* img.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42C59FA1DE4FB1E009C61A8 /* img.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,7 +164,6 @@
 		3F66CA371B44DBC700A78C64 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		3F66CA391B44DF2E00A78C64 /* avisos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = avisos.json; sourceTree = "<group>"; };
 		3F6756CC1B659B0E006B9154 /* Cliente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
-		3F6E56801BAA017E00F3C831 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Imagens/Images.xcassets; sourceTree = "<group>"; };
 		3F7095A21D24BE06000E5670 /* CadUsuarioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CadUsuarioViewController.swift; path = ../CadUsuarioViewController.swift; sourceTree = "<group>"; };
 		3F7095A31D24BE06000E5670 /* CadUsuarioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CadUsuarioViewController.xib; path = ../CadUsuarioViewController.xib; sourceTree = "<group>"; };
 		3F7095A61D24C09D000E5670 /* CadastroService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroService.swift; sourceTree = "<group>"; };
@@ -196,7 +196,6 @@
 		3FD5A2C51BA7192800B9F4B9 /* MensagemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MensagemCell.xib; sourceTree = "<group>"; };
 		3FD5A2C71BA71C1F00B9F4B9 /* MensagemService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MensagemService.swift; sourceTree = "<group>"; };
 		3FD5A2C91BA7454F00B9F4B9 /* DetalheMsgViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheMsgViewController.swift; sourceTree = "<group>"; };
-		3FD5A2CA1BA7454F00B9F4B9 /* DetalheMsgViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalheMsgViewController.xib; sourceTree = "<group>"; };
 		3FE34ED11B5753B3003A254D /* DetalheOrcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheOrcViewController.swift; sourceTree = "<group>"; };
 		3FE34ED21B5753B3003A254D /* DetalheOrcViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalheOrcViewController.xib; sourceTree = "<group>"; };
 		3FF961831B54B46600E7D7A8 /* OrcamentoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrcamentoViewController.swift; sourceTree = "<group>"; };
@@ -248,6 +247,9 @@
 		BD961B1A1DBBC9F6000421BE /* ic_shopping_cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_shopping_cart.png; sourceTree = "<group>"; };
 		BD9C9B651DA86E170094D5FD /* PrincipalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrincipalView.xib; sourceTree = "<group>"; };
 		BD9C9B671DA86FCF0094D5FD /* ControllerMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerMain.swift; sourceTree = "<group>"; };
+		F42C59EC1DE3B518009C61A8 /* DetalheMensagemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheMensagemViewController.swift; sourceTree = "<group>"; };
+		F42C59ED1DE3B518009C61A8 /* DetalheMensagemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalheMensagemViewController.xib; sourceTree = "<group>"; };
+		F42C59FA1DE4FB1E009C61A8 /* img.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = img.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,7 +322,6 @@
 				3FA0F3591BD453C700E6B974 /* CarrinhoViewController.swift */,
 				3FA0F35A1BD453C700E6B974 /* CarrinhoViewController.xib */,
 				3FD5A2C91BA7454F00B9F4B9 /* DetalheMsgViewController.swift */,
-				3FD5A2CA1BA7454F00B9F4B9 /* DetalheMsgViewController.xib */,
 				3FE34ED11B5753B3003A254D /* DetalheOrcViewController.swift */,
 				3FE34ED21B5753B3003A254D /* DetalheOrcViewController.xib */,
 				3FFEBCF41B2F994F00C03FE1 /* LoginViewController.swift */,
@@ -365,6 +366,8 @@
 				BD595ADC1D9B2DC20010C5D0 /* CardView.swift */,
 				BD9C9B651DA86E170094D5FD /* PrincipalView.xib */,
 				BD9C9B671DA86FCF0094D5FD /* ControllerMain.swift */,
+				F42C59EC1DE3B518009C61A8 /* DetalheMensagemViewController.swift */,
+				F42C59ED1DE3B518009C61A8 /* DetalheMensagemViewController.xib */,
 			);
 			path = BeautyClinic;
 			sourceTree = "<group>";
@@ -397,9 +400,9 @@
 		3FFEBCD61B2F98E400C03FE1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3F6E56801BAA017E00F3C831 /* Images.xcassets */,
 				3FFEBCFC1B2FC78D00C03FE1 /* json */,
 				3FFEBCD71B2F98E400C03FE1 /* Imagens */,
+				F42C59FA1DE4FB1E009C61A8 /* img.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -542,11 +545,11 @@
 				BD9C9B661DA86E170094D5FD /* PrincipalView.xib in Resources */,
 				3F0295601B438129009510E4 /* ProdutoViewController.xib in Resources */,
 				3FFD79661B8A000100FDFF2B /* agendamentos.png in Resources */,
-				3F6E56811BAA017E00F3C831 /* Images.xcassets in Resources */,
 				3FA0F35C1BD453C700E6B974 /* CarrinhoViewController.xib in Resources */,
 				3FFEBD011B2FC78D00C03FE1 /* produtos.json in Resources */,
 				3FF961881B54BAD800E7D7A8 /* OrcamentoCell.xib in Resources */,
 				3FFD796D1B8A000100FDFF2B /* procedimentos@2x.png in Resources */,
+				F42C59EF1DE3B518009C61A8 /* DetalheMensagemViewController.xib in Resources */,
 				3F15B7BF1B57510100CBF7C5 /* ProdOrcamentoCell.xib in Resources */,
 				BD3AC6111DAC5A2700FD64FB /* ic_event@2x.png in Resources */,
 				3FFEBD001B2FC78D00C03FE1 /* carros_classicos.json in Resources */,
@@ -575,12 +578,12 @@
 				BD3AC60B1DAC58AD00FD64FB /* ic_message@2x.png in Resources */,
 				BD3AC6171DAC5B0F00FD64FB /* ic_local_offer@2x.png in Resources */,
 				3FA0F3601BD458BF00E6B974 /* CarrinhoCell.xib in Resources */,
-				3FD5A2CC1BA7454F00B9F4B9 /* DetalheMsgViewController.xib in Resources */,
 				3F9248891BAF0CC600BEB1B0 /* PrincipalViewController.xib in Resources */,
 				3FFEBD021B2FC78D00C03FE1 /* login.json in Resources */,
 				3F1B621F1B38FD210090E5C9 /* VendaViewController.xib in Resources */,
 				BD961B1C1DBBC9F7000421BE /* ic_shopping_cart_3x.png in Resources */,
 				3F5EFF471BC1786000D9C411 /* envelope.png in Resources */,
+				F42C59FB1DE4FB1E009C61A8 /* img.xcassets in Resources */,
 				3FFD79681B8A000100FDFF2B /* agendar.png in Resources */,
 				3FFEBCC11B2F949500C03FE1 /* LaunchScreen.xib in Resources */,
 				3F0295641B43868A009510E4 /* ProdutoCell.xib in Resources */,
@@ -628,6 +631,7 @@
 				3FD5A2C81BA71C1F00B9F4B9 /* MensagemService.swift in Sources */,
 				3FA0F35B1BD453C700E6B974 /* CarrinhoViewController.swift in Sources */,
 				3FF9618A1B54BBCD00E7D7A8 /* OrcamentoCell.swift in Sources */,
+				F42C59EE1DE3B518009C61A8 /* DetalheMensagemViewController.swift in Sources */,
 				3F66CA341B44D78C00A78C64 /* Aviso.swift in Sources */,
 				BD595ADD1D9B2DC20010C5D0 /* CardView.swift in Sources */,
 				3F1B62231B38FF5A0090E5C9 /* VendaCell.swift in Sources */,
@@ -791,8 +795,7 @@
 		3FFEBCD11B2F949500C03FE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = T4H78CRT5T;
@@ -806,15 +809,14 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3FFEBCD21B2F949500C03FE1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = T4H78CRT5T;
@@ -827,7 +829,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

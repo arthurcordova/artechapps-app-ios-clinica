@@ -18,8 +18,17 @@ class ControllerMain: UITabBarController, UITabBarControllerDelegate {
         
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        // Show the navigation bar on other view controllers
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
     override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)  
+        super.viewWillAppear(animated)
+        
+        
+
+        
         let viewMensagem = MensagemViewController()
         
         let viewAgendamento = AgendaViewController()
