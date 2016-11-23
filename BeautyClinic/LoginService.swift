@@ -33,6 +33,8 @@ class LoginService {
                 do {
                     let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .MutableLeaves) as? NSDictionary
 
+                    let defaults = NSUserDefaults.standardUserDefaults()
+                    
                     if let parseJSON = json {
                         let cliente = Cliente()
                         cliente.codCliente = parseJSON["codcliente"] as! Int
@@ -42,6 +44,12 @@ class LoginService {
                         //let jsonStatus: NSDictionary = parseJSON["status"] as! NSDictionary
                         //cliente.agendamentos = jsonStatus["agendamentos"] as! Int
                         //cliente.mensagens = jsonStatus["mensagens"] as! Int
+                        
+                        defaults.setInteger(cliente.codCliente, forKey: "codigo")
+                        defaults.setObject(cliente.cpfcnpj, forKey: "cnpj")
+                        defaults.setObject(cliente.nome, forKey: "nome")
+                        defaults.synchronize()
+                        
                         completion(cliente)
                     }
                     

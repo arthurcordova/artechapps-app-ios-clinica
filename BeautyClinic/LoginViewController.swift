@@ -43,6 +43,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             } else {
                 dispatch_sync(dispatch_get_main_queue(), {
                     self.progress.stopAnimating()
+                    
                     let principalViewController = ControllerMain(nibName: "PrincipalView",
                         bundle: nil)
                     principalViewController.cliente = Cliente()
@@ -63,6 +64,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.strCpf.delegate = self
         self.strSenha.delegate = self
         self.addAuxButtonsOnKeyboard()
+        var codigo = 0
+        let defaults = NSUserDefaults.standardUserDefaults()
+        codigo = defaults.integerForKey("codigo")
+        if (codigo > 0){
+            let principalViewController = ControllerMain(nibName: "PrincipalView",
+                                                         bundle: nil)
+            let cliente: Cliente = Cliente()
+            principalViewController.cliente = Cliente()
+            principalViewController.cliente = cliente
+            self.navigationController!.pushViewController(principalViewController, animated: false)
+        }
     }
 
     override func didReceiveMemoryWarning() {
