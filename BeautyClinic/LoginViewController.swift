@@ -71,6 +71,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             let principalViewController = ControllerMain(nibName: "PrincipalView",
                                                          bundle: nil)
             let cliente: Cliente = Cliente()
+            cliente.codCliente = codigo
+            cliente.nome = defaults.objectForKey("nome") as! String
+            
             principalViewController.cliente = Cliente()
             principalViewController.cliente = cliente
             self.navigationController!.pushViewController(principalViewController, animated: false)
