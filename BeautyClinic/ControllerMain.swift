@@ -15,12 +15,11 @@ class ControllerMain: UITabBarController, UITabBarControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
-        
     }
     
     override func viewWillDisappear(animated: Bool) {
         // Show the navigation bar on other view controllers
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        //self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -58,6 +57,7 @@ class ControllerMain: UITabBarController, UITabBarControllerDelegate {
     
     //Delegate methods
     func tabBarController(tabBarController: UITabBarController, shouldSelectViewController viewController: UIViewController) -> Bool {
+        viewController.hidesBottomBarWhenPushed = true
         print("Should select viewController: \(viewController.title) ?")
         return true;
     }

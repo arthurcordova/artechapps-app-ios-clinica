@@ -14,6 +14,16 @@ class AgendaViewController: UIViewController, UITableViewDataSource {
     var agendamentos: Array<Agendamento> = []
     var codCliente: String = ""
     var cliente : Cliente!
+    
+    func Nam1BarBtnKlkFnc(BtnPsgVar: UIBarButtonItem)
+    {
+        print("Nam1BarBtnKlk")
+    }
+    
+    func Nam2BarBtnKlkFnc(BtnPsgVar: UIBarButtonItem)
+    {
+        print("Nam2BarBtnKlk")
+    }
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +45,10 @@ class AgendaViewController: UIViewController, UITableViewDataSource {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationItem.setHidesBackButton(true, animated: true)
+        self.tabBarController?.navigationItem.hidesBackButton = true
+        
+        let Nam2BarBtnVar = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(Nam2BarBtnKlkFnc(_:)))
+        self.tabBarController?.navigationItem.setRightBarButtonItem(Nam2BarBtnVar, animated: true)
         
     }
     

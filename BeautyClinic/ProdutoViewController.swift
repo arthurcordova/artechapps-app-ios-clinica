@@ -46,6 +46,11 @@ class ProdutoViewController: UIViewController, UITableViewDataSource {
         
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.navigationItem.hidesBackButton = true
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return produtos.count
     }

@@ -16,6 +16,8 @@
                 <rect key="frame" x="0.0" y="618" width="375" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <color key="barTintColor" red="0.88235294119999996" green="0.0" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             </tabBar>
             <viewControllers>
                 <viewController id="ksw-mM-I7S" userLabel="tabs 1">

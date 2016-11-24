@@ -111,7 +111,6 @@
 		BD3AC61D1DAC5B4700FD64FB /* ic_local_atm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3AC61A1DAC5B4700FD64FB /* ic_local_atm@2x.png */; };
 		BD3AC61E1DAC5B4700FD64FB /* ic_local_atm@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3AC61B1DAC5B4700FD64FB /* ic_local_atm@3x.png */; };
 		BD3AC61F1DAC5B4700FD64FB /* ic_local_atm.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3AC61C1DAC5B4700FD64FB /* ic_local_atm.png */; };
-		BD595ADD1D9B2DC20010C5D0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD595ADC1D9B2DC20010C5D0 /* CardView.swift */; };
 		BD961B1B1DBBC9F7000421BE /* ic_shopping_cart_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD961B181DBBC9F6000421BE /* ic_shopping_cart_2x.png */; };
 		BD961B1C1DBBC9F7000421BE /* ic_shopping_cart_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD961B191DBBC9F6000421BE /* ic_shopping_cart_3x.png */; };
 		BD961B1D1DBBC9F7000421BE /* ic_shopping_cart.png in Resources */ = {isa = PBXBuildFile; fileRef = BD961B1A1DBBC9F6000421BE /* ic_shopping_cart.png */; };
@@ -241,7 +240,6 @@
 		BD3AC61A1DAC5B4700FD64FB /* ic_local_atm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_local_atm@2x.png"; path = "../../../../ic_local_atm_black_24dp/ios/ic_local_atm.imageset/ic_local_atm@2x.png"; sourceTree = "<group>"; };
 		BD3AC61B1DAC5B4700FD64FB /* ic_local_atm@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_local_atm@3x.png"; path = "../../../../ic_local_atm_black_24dp/ios/ic_local_atm.imageset/ic_local_atm@3x.png"; sourceTree = "<group>"; };
 		BD3AC61C1DAC5B4700FD64FB /* ic_local_atm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_local_atm.png; path = ../../../../ic_local_atm_black_24dp/ios/ic_local_atm.imageset/ic_local_atm.png; sourceTree = "<group>"; };
-		BD595ADC1D9B2DC20010C5D0 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		BD961B181DBBC9F6000421BE /* ic_shopping_cart_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_shopping_cart_2x.png; sourceTree = "<group>"; };
 		BD961B191DBBC9F6000421BE /* ic_shopping_cart_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_shopping_cart_3x.png; sourceTree = "<group>"; };
 		BD961B1A1DBBC9F6000421BE /* ic_shopping_cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_shopping_cart.png; sourceTree = "<group>"; };
@@ -363,7 +361,6 @@
 				3F0295651B438D44009510E4 /* ProdutoService.swift */,
 				3F1B621A1B38FB030090E5C9 /* VendaService.swift */,
 				3FFEBCB41B2F949500C03FE1 /* Supporting Files */,
-				BD595ADC1D9B2DC20010C5D0 /* CardView.swift */,
 				BD9C9B651DA86E170094D5FD /* PrincipalView.xib */,
 				BD9C9B671DA86FCF0094D5FD /* ControllerMain.swift */,
 				F42C59EC1DE3B518009C61A8 /* DetalheMensagemViewController.swift */,
@@ -633,7 +630,6 @@
 				3FF9618A1B54BBCD00E7D7A8 /* OrcamentoCell.swift in Sources */,
 				F42C59EE1DE3B518009C61A8 /* DetalheMensagemViewController.swift in Sources */,
 				3F66CA341B44D78C00A78C64 /* Aviso.swift in Sources */,
-				BD595ADD1D9B2DC20010C5D0 /* CardView.swift in Sources */,
 				3F1B62231B38FF5A0090E5C9 /* VendaCell.swift in Sources */,
 				3FD5A2BA1BA70D1100B9F4B9 /* Mensagem.swift in Sources */,
 				3FE34ED31B5753B3003A254D /* DetalheOrcViewController.swift in Sources */,
