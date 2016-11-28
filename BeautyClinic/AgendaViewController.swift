@@ -3,7 +3,7 @@
 //  BeautyClinic
 //
 //  Created by Matheus Nonaka on 6/20/15.
-//  Copyright (c) 2015 Matheus Nonaka. All rights reserved.
+//  Copyright (c) 2015 Arthur Cordova. All rights reserved.
 //
 
 import UIKit
@@ -22,11 +22,6 @@ class AgendaViewController: UIViewController, UITableViewDataSource {
         self.navigationController!.pushViewController(agendar, animated: true)
     }
     
-    func callView() -> UIView
-    {
-        return UINib(nibName: "AngendarViewController", bundle: nil).instantiateWithOwner(nil, options: nil)[0] as! UIView
-    }
-       
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,9 +44,14 @@ class AgendaViewController: UIViewController, UITableViewDataSource {
         super.viewWillAppear(animated)
         self.tabBarController?.navigationItem.hidesBackButton = true
         
-        let Nam2BarBtnVar = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(novoAgendamento(_:)))
-        self.tabBarController?.navigationItem.setRightBarButtonItem(Nam2BarBtnVar, animated: true)
+        let btnAdd = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(novoAgendamento(_:)))
+        self.tabBarController?.navigationItem.setRightBarButtonItem(btnAdd, animated: true)
         
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.tabBarController?.navigationItem.setRightBarButtonItem(nil, animated: true)
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
