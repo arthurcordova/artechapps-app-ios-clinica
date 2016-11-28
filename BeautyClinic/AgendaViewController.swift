@@ -15,16 +15,18 @@ class AgendaViewController: UIViewController, UITableViewDataSource {
     var codCliente: String = ""
     var cliente : Cliente!
     
-    func Nam1BarBtnKlkFnc(BtnPsgVar: UIBarButtonItem)
+
+    func novoAgendamento(BtnPsgVar: UIBarButtonItem)
     {
-        print("Nam1BarBtnKlk")
+        let agendar = AgendarViewController(nibName: "AgendarViewController", bundle: nil)
+        self.navigationController!.pushViewController(agendar, animated: true)
     }
     
-    func Nam2BarBtnKlkFnc(BtnPsgVar: UIBarButtonItem)
+    func callView() -> UIView
     {
-        print("Nam2BarBtnKlk")
+        return UINib(nibName: "AngendarViewController", bundle: nil).instantiateWithOwner(nil, options: nil)[0] as! UIView
     }
-        
+       
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,7 +49,7 @@ class AgendaViewController: UIViewController, UITableViewDataSource {
         super.viewWillAppear(animated)
         self.tabBarController?.navigationItem.hidesBackButton = true
         
-        let Nam2BarBtnVar = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(Nam2BarBtnKlkFnc(_:)))
+        let Nam2BarBtnVar = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(novoAgendamento(_:)))
         self.tabBarController?.navigationItem.setRightBarButtonItem(Nam2BarBtnVar, animated: true)
         
     }
