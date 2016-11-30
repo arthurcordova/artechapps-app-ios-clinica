@@ -289,82 +289,36 @@
 		3FFEBCB31B2F949500C03FE1 /* BeautyClinic */ = {
 			isa = PBXGroup;
 			children = (
+				F4F7680D1DEF8FA7002797A2 /* Utils */,
+				F4F7680C1DEF8F56002797A2 /* Control */,
+				F4F7680B1DEF8F37002797A2 /* Service */,
+				F4F7680A1DEF8EEA002797A2 /* Model */,
 				3FFEBCD61B2F98E400C03FE1 /* Resources */,
 				3FFEBCB61B2F949500C03FE1 /* AppDelegate.swift */,
-				3FADF9281D33461800C3F1F1 /* DatePickerDialog.swift */,
-				3FD199261BA890FA0013BE4E /* UtilProtocol.swift */,
-				3F30502A1D373A4600719913 /* MedicoService.swift */,
-				3FACB6111BD297EC0092826B /* VendaProtocol.swift */,
-				3F0F32641B362B1B0058AADD /* AgendaCell.swift */,
 				3F0F32661B362D6D0058AADD /* AgendaCell.xib */,
-				3F7095A21D24BE06000E5670 /* CadUsuarioViewController.swift */,
 				3F7095A31D24BE06000E5670 /* CadUsuarioViewController.xib */,
-				3FA0F35D1BD457CE00E6B974 /* CarrinhoCell.swift */,
 				3FA0F35F1BD458BF00E6B974 /* CarrinhoCell.xib */,
-				3FD5A2C31BA718DF00B9F4B9 /* MensagemCell.swift */,
 				3FD5A2C51BA7192800B9F4B9 /* MensagemCell.xib */,
-				3FD199161BA856450013BE4E /* HorarioCell.swift */,
 				3FD199181BA856C10013BE4E /* HorarioCell.xib */,
 				3FF961871B54BAD800E7D7A8 /* OrcamentoCell.xib */,
-				3FF961891B54BBCD00E7D7A8 /* OrcamentoCell.swift */,
-				3F0295611B438660009510E4 /* ProdutoCell.swift */,
 				3F0295631B43868A009510E4 /* ProdutoCell.xib */,
-				3F15B7BC1B57507500CBF7C5 /* ProdOrcamentoCell.swift */,
 				3F15B7BE1B57510100CBF7C5 /* ProdOrcamentoCell.xib */,
 				3F1B62201B38FED60090E5C9 /* VendaCell.xib */,
-				3F1B62221B38FF5A0090E5C9 /* VendaCell.swift */,
-				3F54A3391BA4798400383429 /* AgendarViewController.swift */,
 				3F54A33A1BA4798400383429 /* AgendarViewController.xib */,
-				3F273AC11B35D06C00267B0B /* AgendaViewController.swift */,
 				3F273AC21B35D06C00267B0B /* AgendaViewController.xib */,
-				3FA0F3591BD453C700E6B974 /* CarrinhoViewController.swift */,
 				3FA0F35A1BD453C700E6B974 /* CarrinhoViewController.xib */,
-				3FD5A2C91BA7454F00B9F4B9 /* DetalheMsgViewController.swift */,
-				3FE34ED11B5753B3003A254D /* DetalheOrcViewController.swift */,
 				3FE34ED21B5753B3003A254D /* DetalheOrcViewController.xib */,
-				3FFEBCF41B2F994F00C03FE1 /* LoginViewController.swift */,
 				3FFEBCF51B2F994F00C03FE1 /* LoginViewController.xib */,
-				3FD5A2B51BA70A1300B9F4B9 /* MensagemViewController.swift */,
 				3FD5A2B61BA70A1300B9F4B9 /* MensagemViewController.xib */,
-				3FF961831B54B46600E7D7A8 /* OrcamentoViewController.swift */,
 				3FF961841B54B46600E7D7A8 /* OrcamentoViewController.xib */,
-				3FD199221BA88E9B0013BE4E /* PesquisaProdViewController.swift */,
 				3FD199231BA88E9B0013BE4E /* PesquisaProdViewController.xib */,
-				3F9248861BAF0CC600BEB1B0 /* PrincipalViewController.swift */,
 				3F9248871BAF0CC600BEB1B0 /* PrincipalViewController.xib */,
-				3F02955D1B438129009510E4 /* ProdutoViewController.swift */,
 				3F02955E1B438129009510E4 /* ProdutoViewController.xib */,
 				3F1B621D1B38FD210090E5C9 /* VendaViewController.xib */,
-				3F1B621C1B38FD210090E5C9 /* VendaViewController.swift */,
 				3FFEBCBF1B2F949500C03FE1 /* LaunchScreen.xib */,
-				3FFEBCFA1B2FA29500C03FE1 /* Agendamento.swift */,
-				3FACB60F1BD296A20092826B /* Carrinho.swift */,
-				3F1CA8F81B35D9ED00DC68AA /* Alerta.swift */,
-				3F66CA331B44D78C00A78C64 /* Aviso.swift */,
-				3F7095A61D24C09D000E5670 /* CadastroService.swift */,
-				3F6756CC1B659B0E006B9154 /* Cliente.swift */,
-				3FD1991C1BA85C160013BE4E /* Horario.swift */,
-				3FD5A2B91BA70D1100B9F4B9 /* Mensagem.swift */,
-				3FC20D7F1B4F697300A3A697 /* Orcamento.swift */,
-				3F02955B1B4380C5009510E4 /* Produto.swift */,
-				3F8518F01B560072006468E8 /* ProdutoOrcamento.swift */,
-				3F66CA371B44DBC700A78C64 /* Utils.swift */,
-				3F1B62181B38FA6F0090E5C9 /* Venda.swift */,
-				3FFEBCF81B2FA0E200C03FE1 /* AgendaService.swift */,
-				3FD1991A1BA85B630013BE4E /* AgendamentoService.swift */,
-				3F66CA351B44D81000A78C64 /* AvisoService.swift */,
-				3FACCB701BD8830E00C8DA28 /* CarrinhoService.swift */,
-				3F8518EE1B55EA57006468E8 /* DetalheOrcamentoService.swift */,
-				3F0F32621B3627860058AADD /* LoginService.swift */,
-				3FD5A2C71BA71C1F00B9F4B9 /* MensagemService.swift */,
-				3FC20D811B4F6AF400A3A697 /* OrcamentoService.swift */,
-				3F0295651B438D44009510E4 /* ProdutoService.swift */,
-				3F1B621A1B38FB030090E5C9 /* VendaService.swift */,
-				3FFEBCB41B2F949500C03FE1 /* Supporting Files */,
 				BD9C9B651DA86E170094D5FD /* PrincipalView.xib */,
-				BD9C9B671DA86FCF0094D5FD /* ControllerMain.swift */,
-				F42C59EC1DE3B518009C61A8 /* DetalheMensagemViewController.swift */,
 				F42C59ED1DE3B518009C61A8 /* DetalheMensagemViewController.xib */,
+				3FFEBCB41B2F949500C03FE1 /* Supporting Files */,
 			);
 			path = BeautyClinic;
 			sourceTree = "<group>";
@@ -452,6 +406,84 @@
 				3FFEBD031B2FC84E00C03FE1 /* agendamentos.json */,
 			);
 			path = json;
+			sourceTree = "<group>";
+		};
+		F4F7680A1DEF8EEA002797A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3FFEBCFA1B2FA29500C03FE1 /* Agendamento.swift */,
+				3FACB60F1BD296A20092826B /* Carrinho.swift */,
+				3F1CA8F81B35D9ED00DC68AA /* Alerta.swift */,
+				3F66CA331B44D78C00A78C64 /* Aviso.swift */,
+				3F7095A61D24C09D000E5670 /* CadastroService.swift */,
+				3F6756CC1B659B0E006B9154 /* Cliente.swift */,
+				3FD1991C1BA85C160013BE4E /* Horario.swift */,
+				3FD5A2B91BA70D1100B9F4B9 /* Mensagem.swift */,
+				3FC20D7F1B4F697300A3A697 /* Orcamento.swift */,
+				3F02955B1B4380C5009510E4 /* Produto.swift */,
+				3F8518F01B560072006468E8 /* ProdutoOrcamento.swift */,
+				3F1B62181B38FA6F0090E5C9 /* Venda.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F4F7680B1DEF8F37002797A2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3FFEBCF81B2FA0E200C03FE1 /* AgendaService.swift */,
+				3FD1991A1BA85B630013BE4E /* AgendamentoService.swift */,
+				3F66CA351B44D81000A78C64 /* AvisoService.swift */,
+				3FACCB701BD8830E00C8DA28 /* CarrinhoService.swift */,
+				3F8518EE1B55EA57006468E8 /* DetalheOrcamentoService.swift */,
+				3F0F32621B3627860058AADD /* LoginService.swift */,
+				3FD5A2C71BA71C1F00B9F4B9 /* MensagemService.swift */,
+				3FC20D811B4F6AF400A3A697 /* OrcamentoService.swift */,
+				3F0295651B438D44009510E4 /* ProdutoService.swift */,
+				3F1B621A1B38FB030090E5C9 /* VendaService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		F4F7680C1DEF8F56002797A2 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				BD9C9B671DA86FCF0094D5FD /* ControllerMain.swift */,
+				F42C59EC1DE3B518009C61A8 /* DetalheMensagemViewController.swift */,
+				3F7095A21D24BE06000E5670 /* CadUsuarioViewController.swift */,
+				3F54A3391BA4798400383429 /* AgendarViewController.swift */,
+				3F273AC11B35D06C00267B0B /* AgendaViewController.swift */,
+				3FA0F3591BD453C700E6B974 /* CarrinhoViewController.swift */,
+				3FD5A2C91BA7454F00B9F4B9 /* DetalheMsgViewController.swift */,
+				3FE34ED11B5753B3003A254D /* DetalheOrcViewController.swift */,
+				3FFEBCF41B2F994F00C03FE1 /* LoginViewController.swift */,
+				3FD5A2B51BA70A1300B9F4B9 /* MensagemViewController.swift */,
+				3FF961831B54B46600E7D7A8 /* OrcamentoViewController.swift */,
+				3FD199221BA88E9B0013BE4E /* PesquisaProdViewController.swift */,
+				3F9248861BAF0CC600BEB1B0 /* PrincipalViewController.swift */,
+				3F02955D1B438129009510E4 /* ProdutoViewController.swift */,
+				3F1B621C1B38FD210090E5C9 /* VendaViewController.swift */,
+			);
+			name = Control;
+			sourceTree = "<group>";
+		};
+		F4F7680D1DEF8FA7002797A2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3F66CA371B44DBC700A78C64 /* Utils.swift */,
+				3FA0F35D1BD457CE00E6B974 /* CarrinhoCell.swift */,
+				3FD5A2C31BA718DF00B9F4B9 /* MensagemCell.swift */,
+				3FD199161BA856450013BE4E /* HorarioCell.swift */,
+				3FF961891B54BBCD00E7D7A8 /* OrcamentoCell.swift */,
+				3F0295611B438660009510E4 /* ProdutoCell.swift */,
+				3F15B7BC1B57507500CBF7C5 /* ProdOrcamentoCell.swift */,
+				3F1B62221B38FF5A0090E5C9 /* VendaCell.swift */,
+				3FADF9281D33461800C3F1F1 /* DatePickerDialog.swift */,
+				3FD199261BA890FA0013BE4E /* UtilProtocol.swift */,
+				3F30502A1D373A4600719913 /* MedicoService.swift */,
+				3FACB6111BD297EC0092826B /* VendaProtocol.swift */,
+				3F0F32641B362B1B0058AADD /* AgendaCell.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
