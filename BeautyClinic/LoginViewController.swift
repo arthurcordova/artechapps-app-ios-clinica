@@ -18,6 +18,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var btnLogin: UIButton!
     @IBOutlet var btnCadastrar: UIButton!
     @IBOutlet var progress: UIActivityIndicatorView!
+    @IBOutlet var card: UIView!
     
     @IBAction func fazerLogin(sender: UIButton) {
         
@@ -64,6 +65,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.strCpf.delegate = self
         self.strSenha.delegate = self
         self.addAuxButtonsOnKeyboard()
+        self.card.layer.cornerRadius = 6
         var codigo = 0
         let defaults = NSUserDefaults.standardUserDefaults()
         codigo = defaults.integerForKey("codigo")
