@@ -18,7 +18,7 @@ class AgendaViewController: UIViewController, UITableViewDataSource {
 
     func novoAgendamento(BtnPsgVar: UIBarButtonItem)
     {
-        let agendar = AgendarViewController(nibName: "AgendarViewController", bundle: nil)
+        let agendar = NovoAgendamento(nibName: "NovoAgendamento", bundle: nil)
         self.navigationController!.pushViewController(agendar, animated: true)
     }
     

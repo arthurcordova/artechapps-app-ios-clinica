@@ -119,6 +119,8 @@
 		F42C59EE1DE3B518009C61A8 /* DetalheMensagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42C59EC1DE3B518009C61A8 /* DetalheMensagemViewController.swift */; };
 		F42C59EF1DE3B518009C61A8 /* DetalheMensagemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42C59ED1DE3B518009C61A8 /* DetalheMensagemViewController.xib */; };
 		F42C59FB1DE4FB1E009C61A8 /* img.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42C59FA1DE4FB1E009C61A8 /* img.xcassets */; };
+		F4F127C41DEF928D005FFEDF /* NovoAgendamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F127C21DEF928D005FFEDF /* NovoAgendamento.swift */; };
+		F4F127C51DEF928D005FFEDF /* NovoAgendamento.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4F127C31DEF928D005FFEDF /* NovoAgendamento.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -248,6 +250,8 @@
 		F42C59EC1DE3B518009C61A8 /* DetalheMensagemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheMensagemViewController.swift; sourceTree = "<group>"; };
 		F42C59ED1DE3B518009C61A8 /* DetalheMensagemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalheMensagemViewController.xib; sourceTree = "<group>"; };
 		F42C59FA1DE4FB1E009C61A8 /* img.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = img.xcassets; sourceTree = "<group>"; };
+		F4F127C21DEF928D005FFEDF /* NovoAgendamento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovoAgendamento.swift; sourceTree = "<group>"; };
+		F4F127C31DEF928D005FFEDF /* NovoAgendamento.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NovoAgendamento.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,35 +293,12 @@
 		3FFEBCB31B2F949500C03FE1 /* BeautyClinic */ = {
 			isa = PBXGroup;
 			children = (
+				F4F768111DEF910D002797A2 /* View */,
 				F4F7680D1DEF8FA7002797A2 /* Utils */,
 				F4F7680C1DEF8F56002797A2 /* Control */,
 				F4F7680B1DEF8F37002797A2 /* Service */,
 				F4F7680A1DEF8EEA002797A2 /* Model */,
 				3FFEBCD61B2F98E400C03FE1 /* Resources */,
-				3FFEBCB61B2F949500C03FE1 /* AppDelegate.swift */,
-				3F0F32661B362D6D0058AADD /* AgendaCell.xib */,
-				3F7095A31D24BE06000E5670 /* CadUsuarioViewController.xib */,
-				3FA0F35F1BD458BF00E6B974 /* CarrinhoCell.xib */,
-				3FD5A2C51BA7192800B9F4B9 /* MensagemCell.xib */,
-				3FD199181BA856C10013BE4E /* HorarioCell.xib */,
-				3FF961871B54BAD800E7D7A8 /* OrcamentoCell.xib */,
-				3F0295631B43868A009510E4 /* ProdutoCell.xib */,
-				3F15B7BE1B57510100CBF7C5 /* ProdOrcamentoCell.xib */,
-				3F1B62201B38FED60090E5C9 /* VendaCell.xib */,
-				3F54A33A1BA4798400383429 /* AgendarViewController.xib */,
-				3F273AC21B35D06C00267B0B /* AgendaViewController.xib */,
-				3FA0F35A1BD453C700E6B974 /* CarrinhoViewController.xib */,
-				3FE34ED21B5753B3003A254D /* DetalheOrcViewController.xib */,
-				3FFEBCF51B2F994F00C03FE1 /* LoginViewController.xib */,
-				3FD5A2B61BA70A1300B9F4B9 /* MensagemViewController.xib */,
-				3FF961841B54B46600E7D7A8 /* OrcamentoViewController.xib */,
-				3FD199231BA88E9B0013BE4E /* PesquisaProdViewController.xib */,
-				3F9248871BAF0CC600BEB1B0 /* PrincipalViewController.xib */,
-				3F02955E1B438129009510E4 /* ProdutoViewController.xib */,
-				3F1B621D1B38FD210090E5C9 /* VendaViewController.xib */,
-				3FFEBCBF1B2F949500C03FE1 /* LaunchScreen.xib */,
-				BD9C9B651DA86E170094D5FD /* PrincipalView.xib */,
-				F42C59ED1DE3B518009C61A8 /* DetalheMensagemViewController.xib */,
 				3FFEBCB41B2F949500C03FE1 /* Supporting Files */,
 			);
 			path = BeautyClinic;
@@ -447,6 +428,8 @@
 		F4F7680C1DEF8F56002797A2 /* Control */ = {
 			isa = PBXGroup;
 			children = (
+				F4F127C21DEF928D005FFEDF /* NovoAgendamento.swift */,
+				3FFEBCB61B2F949500C03FE1 /* AppDelegate.swift */,
 				BD9C9B671DA86FCF0094D5FD /* ControllerMain.swift */,
 				F42C59EC1DE3B518009C61A8 /* DetalheMensagemViewController.swift */,
 				3F7095A21D24BE06000E5670 /* CadUsuarioViewController.swift */,
@@ -484,6 +467,37 @@
 				3F0F32641B362B1B0058AADD /* AgendaCell.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		F4F768111DEF910D002797A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F0F32661B362D6D0058AADD /* AgendaCell.xib */,
+				3F7095A31D24BE06000E5670 /* CadUsuarioViewController.xib */,
+				3FA0F35F1BD458BF00E6B974 /* CarrinhoCell.xib */,
+				3FD5A2C51BA7192800B9F4B9 /* MensagemCell.xib */,
+				3FD199181BA856C10013BE4E /* HorarioCell.xib */,
+				3FF961871B54BAD800E7D7A8 /* OrcamentoCell.xib */,
+				3F0295631B43868A009510E4 /* ProdutoCell.xib */,
+				3F15B7BE1B57510100CBF7C5 /* ProdOrcamentoCell.xib */,
+				F4F127C31DEF928D005FFEDF /* NovoAgendamento.xib */,
+				3F1B62201B38FED60090E5C9 /* VendaCell.xib */,
+				3F54A33A1BA4798400383429 /* AgendarViewController.xib */,
+				3F273AC21B35D06C00267B0B /* AgendaViewController.xib */,
+				3FA0F35A1BD453C700E6B974 /* CarrinhoViewController.xib */,
+				3FE34ED21B5753B3003A254D /* DetalheOrcViewController.xib */,
+				3FFEBCF51B2F994F00C03FE1 /* LoginViewController.xib */,
+				3FD5A2B61BA70A1300B9F4B9 /* MensagemViewController.xib */,
+				3FF961841B54B46600E7D7A8 /* OrcamentoViewController.xib */,
+				3FD199231BA88E9B0013BE4E /* PesquisaProdViewController.xib */,
+				3F9248871BAF0CC600BEB1B0 /* PrincipalViewController.xib */,
+				3F02955E1B438129009510E4 /* ProdutoViewController.xib */,
+				3F1B621D1B38FD210090E5C9 /* VendaViewController.xib */,
+				3FFEBCBF1B2F949500C03FE1 /* LaunchScreen.xib */,
+				BD9C9B651DA86E170094D5FD /* PrincipalView.xib */,
+				F42C59ED1DE3B518009C61A8 /* DetalheMensagemViewController.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -602,6 +616,7 @@
 				BD961B1D1DBBC9F7000421BE /* ic_shopping_cart.png in Resources */,
 				3FFEBD041B2FC84E00C03FE1 /* agendamentos.json in Resources */,
 				BD3AC61E1DAC5B4700FD64FB /* ic_local_atm@3x.png in Resources */,
+				F4F127C51DEF928D005FFEDF /* NovoAgendamento.xib in Resources */,
 				3FFD79691B8A000100FDFF2B /* agendar@2x.png in Resources */,
 				3F9EF3241B49A5EC00853DA0 /* procedimento.png in Resources */,
 				BD3AC60B1DAC58AD00FD64FB /* ic_message@2x.png in Resources */,
@@ -692,6 +707,7 @@
 				3F66CA381B44DBC700A78C64 /* Utils.swift in Sources */,
 				3F7095A71D24C09D000E5670 /* CadastroService.swift in Sources */,
 				3F273AC31B35D06C00267B0B /* AgendaViewController.swift in Sources */,
+				F4F127C41DEF928D005FFEDF /* NovoAgendamento.swift in Sources */,
 				3F1B621E1B38FD210090E5C9 /* VendaViewController.swift in Sources */,
 				3FD1991D1BA85C160013BE4E /* Horario.swift in Sources */,
 				3FFEBCFB1B2FA29500C03FE1 /* Agendamento.swift in Sources */,
