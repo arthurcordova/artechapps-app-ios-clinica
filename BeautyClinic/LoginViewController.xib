@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="BeautyClinic" customModuleProvider="target">
             <connections>
+                <outlet property="btnCadastro" destination="Gty-mR-COy" id="jSv-hy-pR1"/>
                 <outlet property="btnEntrar" destination="YcG-li-pDh" id="Hpg-wh-zGm"/>
                 <outlet property="tfLogin" destination="fQy-qT-35n" id="Qm9-2v-w4z"/>
                 <outlet property="tfSenha" destination="GDa-Hc-Nrx" id="KmT-mG-Aco"/>
@@ -30,6 +31,9 @@
                     <state key="normal" title="Entrar">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="actionLogin:" destination="-1" eventType="touchUpInside" id="gqG-hb-DuD"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fQy-qT-35n">
                     <rect key="frame" x="54" y="270" width="267" height="30"/>
@@ -52,6 +56,9 @@
                     <state key="normal" title="Ainda não é cadastrado? Cadastre-se">
                         <color key="titleColor" red="0.88235294119999996" green="0.0" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="actionCadastrar:" destination="-1" eventType="touchUpInside" id="Mvy-Lx-PuE"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Beauty Clinic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkc-hJ-snr">
                     <rect key="frame" x="16" y="126" width="343" height="68"/>

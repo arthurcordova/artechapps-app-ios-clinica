@@ -15,18 +15,19 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var tfLogin: UITextField!
     @IBOutlet var tfSenha: UITextField!
     @IBOutlet var btnEntrar: UIButton!
-    @IBOutlet var btnLogin: UIButton!
-    @IBOutlet var btnCadastrar: UIButton!
+    @IBOutlet var btnCadastro: UIButton!
     
-    @IBAction func fazerLogin(sender: UIButton) {
-        
-        //progress.startAnimating()
-        btnLogin.hidden = true
-        
+    
+    @IBAction func actionCadastrar(sender: UIButton) {
+        let cadUsuarioViewController = CadUsuarioViewController(nibName: "CadUsuarioViewController", bundle: nil)
+        self.navigationController!.pushViewController(cadUsuarioViewController, animated: true)
+    }
+    
+    @IBAction func actionLogin(sender: UIButton) {
         var cpfCnpjAux = self.tfLogin.text!.stringByReplacingOccurrencesOfString(".", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
-
+        
         cpfCnpjAux = cpfCnpjAux.stringByReplacingOccurrencesOfString("-", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
-
+        
         
         LoginService.doLogin({(cliente: Cliente) in
             if (cliente.nome == "Erro") {
@@ -34,7 +35,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     //self.progress.stopAnimating()
                     if #available(iOS 8.0, *) {
                         Alerta.alerta("Falha no acesso", mensagem: "Verifique seus dados de login e tente novamente", viewController: self)
-                        self.btnLogin.hidden = false
                     } else {
                         // Fallback on earlier versions
                     }
@@ -43,12 +43,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 dispatch_sync(dispatch_get_main_queue(), {
                     //self.progress.stopAnimating()
                     /* VOLTAR PARA VERSAO PRODUCAO
-                    let principalViewController = ControllerMain(nibName: "PrincipalView",
-                        bundle: nil)
-                    principalViewController.cliente = Cliente()
-                    principalViewController.cliente = cliente
-                    self.navigationController!.pushViewController(principalViewController, animated: false)
- */
+                     let principalViewController = ControllerMain(nibName: "PrincipalView",
+                     bundle: nil)
+                     principalViewController.cliente = Cliente()
+                     principalViewController.cliente = cliente
+                     self.navigationController!.pushViewController(principalViewController, animated: false)
+                     */
                     let dash = Dashboard(nibName: "Dashboard",
                         bundle: nil)
                     self.navigationController!.pushViewController(dash, animated: false)
@@ -56,13 +56,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 })
             }
             }, cpfCnpj: cpfCnpjAux, senha: self.tfSenha.text!)
-    }
-    
-    @IBAction func cadastrar(sender: UIButton) {
-        let cadUsuarioViewController = CadUsuarioViewController(nibName: "CadUsuarioViewController", bundle: nil)
-        self.navigationController!.pushViewController(cadUsuarioViewController, animated: false)
-    }
 
+    }
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tfLogin.delegate = self
@@ -98,7 +94,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             textField.resignFirstResponder()
             return true
         } else if (textField == tfSenha) {
-            self.fazerLogin(btnLogin!)
+            self.actionLogin(btnEntrar!)
             return true
         }
         return false
@@ -147,7 +143,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     func doneSenhaAction() {
         if (self.tfLogin.text?.characters.count > 0) {
-            self.fazerLogin(btnLogin)
+            self.actionLogin(btnEntrar)
         } else {
             self.tfSenha.resignFirstResponder()
             //self.strCpf.becomeFirstResponder()
