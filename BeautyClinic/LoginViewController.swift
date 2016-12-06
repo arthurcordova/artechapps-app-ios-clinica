@@ -71,15 +71,19 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let defaults = NSUserDefaults.standardUserDefaults()
         codigo = defaults.integerForKey("codigo")
         if (codigo > 0){
-            let principalViewController = ControllerMain(nibName: "PrincipalView",
-                                                         bundle: nil)
-            let cliente: Cliente = Cliente()
-            cliente.codCliente = codigo
-            cliente.nome = defaults.objectForKey("nome") as! String
+//            let principalViewController = ControllerMain(nibName: "PrincipalView",
+//                                                         bundle: nil)
+//            let cliente: Cliente = Cliente()
+//            cliente.codCliente = codigo
+//            cliente.nome = defaults.objectForKey("nome") as! String
+//            
+//            principalViewController.cliente = Cliente()
+//            principalViewController.cliente = cliente
             
-            principalViewController.cliente = Cliente()
-            principalViewController.cliente = cliente
-            self.navigationController!.pushViewController(principalViewController, animated: false)
+            let dash = Dashboard(nibName: "Dashboard", bundle: nil)
+            
+            
+            self.navigationController!.pushViewController(dash, animated: false)
         }
  
     }

@@ -99,9 +99,6 @@
 		3FFEBD011B2FC78D00C03FE1 /* produtos.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FFEBCFE1B2FC78D00C03FE1 /* produtos.json */; };
 		3FFEBD021B2FC78D00C03FE1 /* login.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FFEBCFF1B2FC78D00C03FE1 /* login.json */; };
 		3FFEBD041B2FC84E00C03FE1 /* agendamentos.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FFEBD031B2FC84E00C03FE1 /* agendamentos.json */; };
-		BD3AC60B1DAC58AD00FD64FB /* ic_message@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3AC6081DAC58AD00FD64FB /* ic_message@2x.png */; };
-		BD3AC60C1DAC58AD00FD64FB /* ic_message@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3AC6091DAC58AD00FD64FB /* ic_message@3x.png */; };
-		BD3AC60D1DAC58AD00FD64FB /* ic_message.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3AC60A1DAC58AD00FD64FB /* ic_message.png */; };
 		BD3AC6111DAC5A2700FD64FB /* ic_event@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3AC60E1DAC5A2700FD64FB /* ic_event@2x.png */; };
 		BD3AC6121DAC5A2700FD64FB /* ic_event@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3AC60F1DAC5A2700FD64FB /* ic_event@3x.png */; };
 		BD3AC6131DAC5A2700FD64FB /* ic_event.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3AC6101DAC5A2700FD64FB /* ic_event.png */; };
@@ -233,9 +230,6 @@
 		3FFEBCFE1B2FC78D00C03FE1 /* produtos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = produtos.json; sourceTree = "<group>"; };
 		3FFEBCFF1B2FC78D00C03FE1 /* login.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = login.json; sourceTree = "<group>"; };
 		3FFEBD031B2FC84E00C03FE1 /* agendamentos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = agendamentos.json; sourceTree = "<group>"; };
-		BD3AC6081DAC58AD00FD64FB /* ic_message@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_message@2x.png"; path = "BeautyClinic/Images.xcassets/AppIcon.appiconset/ic_message@2x.png"; sourceTree = SOURCE_ROOT; };
-		BD3AC6091DAC58AD00FD64FB /* ic_message@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_message@3x.png"; path = "BeautyClinic/Images.xcassets/AppIcon.appiconset/ic_message@3x.png"; sourceTree = SOURCE_ROOT; };
-		BD3AC60A1DAC58AD00FD64FB /* ic_message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_message.png; path = BeautyClinic/Images.xcassets/AppIcon.appiconset/ic_message.png; sourceTree = SOURCE_ROOT; };
 		BD3AC60E1DAC5A2700FD64FB /* ic_event@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_event@2x.png"; path = "../../../../ic_event_black_24dp/ios/ic_event.imageset/ic_event@2x.png"; sourceTree = "<group>"; };
 		BD3AC60F1DAC5A2700FD64FB /* ic_event@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_event@3x.png"; path = "../../../../ic_event_black_24dp/ios/ic_event.imageset/ic_event@3x.png"; sourceTree = "<group>"; };
 		BD3AC6101DAC5A2700FD64FB /* ic_event.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_event.png; path = ../../../../ic_event_black_24dp/ios/ic_event.imageset/ic_event.png; sourceTree = "<group>"; };
@@ -361,9 +355,6 @@
 				BD3AC60E1DAC5A2700FD64FB /* ic_event@2x.png */,
 				BD3AC60F1DAC5A2700FD64FB /* ic_event@3x.png */,
 				BD3AC6101DAC5A2700FD64FB /* ic_event.png */,
-				BD3AC6081DAC58AD00FD64FB /* ic_message@2x.png */,
-				BD3AC6091DAC58AD00FD64FB /* ic_message@3x.png */,
-				BD3AC60A1DAC58AD00FD64FB /* ic_message.png */,
 				3FFD795A1B8A000100FDFF2B /* agendamentos.png */,
 				3FFD795B1B8A000100FDFF2B /* agendamentos@2x.png */,
 				3FFD795C1B8A000100FDFF2B /* agendar.png */,
@@ -621,7 +612,6 @@
 				BD3AC61F1DAC5B4700FD64FB /* ic_local_atm.png in Resources */,
 				3FD199191BA856C10013BE4E /* HorarioCell.xib in Resources */,
 				BD3AC6181DAC5B0F00FD64FB /* ic_local_offer@3x.png in Resources */,
-				BD3AC60D1DAC58AD00FD64FB /* ic_message.png in Resources */,
 				3FF961861B54B46600E7D7A8 /* OrcamentoViewController.xib in Resources */,
 				BD961B1D1DBBC9F7000421BE /* ic_shopping_cart.png in Resources */,
 				3FFEBD041B2FC84E00C03FE1 /* agendamentos.json in Resources */,
@@ -629,7 +619,6 @@
 				F4F127C51DEF928D005FFEDF /* NovoAgendamento.xib in Resources */,
 				3FFD79691B8A000100FDFF2B /* agendar@2x.png in Resources */,
 				3F9EF3241B49A5EC00853DA0 /* procedimento.png in Resources */,
-				BD3AC60B1DAC58AD00FD64FB /* ic_message@2x.png in Resources */,
 				BD3AC6171DAC5B0F00FD64FB /* ic_local_offer@2x.png in Resources */,
 				3FA0F3601BD458BF00E6B974 /* CarrinhoCell.xib in Resources */,
 				3F9248891BAF0CC600BEB1B0 /* PrincipalViewController.xib in Resources */,
@@ -653,7 +642,6 @@
 				3FFD79671B8A000100FDFF2B /* agendamentos@2x.png in Resources */,
 				3F1B62211B38FED60090E5C9 /* VendaCell.xib in Resources */,
 				3FFEBCF71B2F994F00C03FE1 /* LoginViewController.xib in Resources */,
-				BD3AC60C1DAC58AD00FD64FB /* ic_message@3x.png in Resources */,
 				BD3AC61D1DAC5B4700FD64FB /* ic_local_atm@2x.png in Resources */,
 				3FFD79711B8A000100FDFF2B /* sair@2x.png in Resources */,
 			);

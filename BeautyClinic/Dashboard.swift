@@ -18,15 +18,7 @@ class Dashboard: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        card1.layer.cornerRadius = 5
-        
-        card2.layer.cornerRadius = 5
-        
-        card3.layer.cornerRadius = 5
-        
-        card4.layer.cornerRadius = 5
-        
-        
+                
         
     }
 

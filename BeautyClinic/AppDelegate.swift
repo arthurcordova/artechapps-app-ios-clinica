@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainNavigator = UINavigationController()
         mainNavigator.setNavigationBarHidden(true, animated: false)
         let loginController = LoginViewController(nibName: "LoginViewController", bundle: nil)
-        mainNavigator.pushViewController(loginController, animated: false)
+        mainNavigator.pushViewController(loginController, animated: true)
         
         self.window!.rootViewController = mainNavigator
         self.window!.makeKeyAndVisible()
