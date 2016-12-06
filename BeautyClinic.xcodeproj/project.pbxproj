@@ -119,6 +119,8 @@
 		F42C59EE1DE3B518009C61A8 /* DetalheMensagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42C59EC1DE3B518009C61A8 /* DetalheMensagemViewController.swift */; };
 		F42C59EF1DE3B518009C61A8 /* DetalheMensagemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42C59ED1DE3B518009C61A8 /* DetalheMensagemViewController.xib */; };
 		F42C59FB1DE4FB1E009C61A8 /* img.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42C59FA1DE4FB1E009C61A8 /* img.xcassets */; };
+		F48CC1A01DF62AE700159E4A /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48CC19E1DF62AE700159E4A /* Dashboard.swift */; };
+		F48CC1A11DF62AE700159E4A /* Dashboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48CC19F1DF62AE700159E4A /* Dashboard.xib */; };
 		F4F127C41DEF928D005FFEDF /* NovoAgendamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F127C21DEF928D005FFEDF /* NovoAgendamento.swift */; };
 		F4F127C51DEF928D005FFEDF /* NovoAgendamento.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4F127C31DEF928D005FFEDF /* NovoAgendamento.xib */; };
 		F4F127C71DF10365005FFEDF /* arrow.svg in Resources */ = {isa = PBXBuildFile; fileRef = F4F127C61DF10365005FFEDF /* arrow.svg */; };
@@ -251,6 +253,8 @@
 		F42C59EC1DE3B518009C61A8 /* DetalheMensagemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheMensagemViewController.swift; sourceTree = "<group>"; };
 		F42C59ED1DE3B518009C61A8 /* DetalheMensagemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalheMensagemViewController.xib; sourceTree = "<group>"; };
 		F42C59FA1DE4FB1E009C61A8 /* img.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = img.xcassets; sourceTree = "<group>"; };
+		F48CC19E1DF62AE700159E4A /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		F48CC19F1DF62AE700159E4A /* Dashboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Dashboard.xib; sourceTree = "<group>"; };
 		F4F127C21DEF928D005FFEDF /* NovoAgendamento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovoAgendamento.swift; sourceTree = "<group>"; };
 		F4F127C31DEF928D005FFEDF /* NovoAgendamento.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NovoAgendamento.xib; sourceTree = "<group>"; };
 		F4F127C61DF10365005FFEDF /* arrow.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = arrow.svg; sourceTree = "<group>"; };
@@ -431,6 +435,7 @@
 		F4F7680C1DEF8F56002797A2 /* Control */ = {
 			isa = PBXGroup;
 			children = (
+				F48CC19E1DF62AE700159E4A /* Dashboard.swift */,
 				F4F127C21DEF928D005FFEDF /* NovoAgendamento.swift */,
 				3FFEBCB61B2F949500C03FE1 /* AppDelegate.swift */,
 				BD9C9B671DA86FCF0094D5FD /* ControllerMain.swift */,
@@ -499,6 +504,7 @@
 				3FFEBCBF1B2F949500C03FE1 /* LaunchScreen.xib */,
 				BD9C9B651DA86E170094D5FD /* PrincipalView.xib */,
 				F42C59ED1DE3B518009C61A8 /* DetalheMensagemViewController.xib */,
+				F48CC19F1DF62AE700159E4A /* Dashboard.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -634,6 +640,7 @@
 				F42C59FB1DE4FB1E009C61A8 /* img.xcassets in Resources */,
 				3FFD79681B8A000100FDFF2B /* agendar.png in Resources */,
 				3FFEBCC11B2F949500C03FE1 /* LaunchScreen.xib in Resources */,
+				F48CC1A11DF62AE700159E4A /* Dashboard.xib in Resources */,
 				3F0295641B43868A009510E4 /* ProdutoCell.xib in Resources */,
 				3F273AC41B35D06C00267B0B /* AgendaViewController.xib in Resources */,
 				BD3AC6191DAC5B0F00FD64FB /* ic_local_offer.png in Resources */,
@@ -702,6 +709,7 @@
 				3FC20D821B4F6AF400A3A697 /* OrcamentoService.swift in Sources */,
 				3F1CA8F91B35D9ED00DC68AA /* Alerta.swift in Sources */,
 				3FACB6101BD296A20092826B /* Carrinho.swift in Sources */,
+				F48CC1A01DF62AE700159E4A /* Dashboard.swift in Sources */,
 				3F0F32651B362B1B0058AADD /* AgendaCell.swift in Sources */,
 				3FD1991B1BA85B630013BE4E /* AgendamentoService.swift in Sources */,
 				3FD5A2B71BA70A1300B9F4B9 /* MensagemViewController.swift in Sources */,

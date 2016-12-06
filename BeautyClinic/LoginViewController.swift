@@ -12,20 +12,18 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     var agendamentos: Array<Agendamento> = []
     
-    @IBOutlet var imgCentral: UIImageView!
-    @IBOutlet var strCpf: UITextField!
-    @IBOutlet var strSenha: UITextField!
+    @IBOutlet var tfLogin: UITextField!
+    @IBOutlet var tfSenha: UITextField!
+    @IBOutlet var btnEntrar: UIButton!
     @IBOutlet var btnLogin: UIButton!
     @IBOutlet var btnCadastrar: UIButton!
-    @IBOutlet var progress: UIActivityIndicatorView!
-    @IBOutlet var card: UIView!
     
     @IBAction func fazerLogin(sender: UIButton) {
         
-        progress.startAnimating()
+        //progress.startAnimating()
         btnLogin.hidden = true
         
-        var cpfCnpjAux = self.strCpf.text!.stringByReplacingOccurrencesOfString(".", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+        var cpfCnpjAux = self.tfLogin.text!.stringByReplacingOccurrencesOfString(".", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
 
         cpfCnpjAux = cpfCnpjAux.stringByReplacingOccurrencesOfString("-", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
 
@@ -33,7 +31,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         LoginService.doLogin({(cliente: Cliente) in
             if (cliente.nome == "Erro") {
                 dispatch_sync(dispatch_get_main_queue(), {
-                    self.progress.stopAnimating()
+                    //self.progress.stopAnimating()
                     if #available(iOS 8.0, *) {
                         Alerta.alerta("Falha no acesso", mensagem: "Verifique seus dados de login e tente novamente", viewController: self)
                         self.btnLogin.hidden = false
@@ -43,16 +41,21 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 })
             } else {
                 dispatch_sync(dispatch_get_main_queue(), {
-                    self.progress.stopAnimating()
-                    
+                    //self.progress.stopAnimating()
+                    /* VOLTAR PARA VERSAO PRODUCAO
                     let principalViewController = ControllerMain(nibName: "PrincipalView",
                         bundle: nil)
                     principalViewController.cliente = Cliente()
                     principalViewController.cliente = cliente
                     self.navigationController!.pushViewController(principalViewController, animated: false)
+ */
+                    let dash = Dashboard(nibName: "Dashboard",
+                        bundle: nil)
+                    self.navigationController!.pushViewController(dash, animated: false)
+                    
                 })
             }
-            }, cpfCnpj: cpfCnpjAux, senha: self.strSenha.text!)
+            }, cpfCnpj: cpfCnpjAux, senha: self.tfSenha.text!)
     }
     
     @IBAction func cadastrar(sender: UIButton) {
@@ -62,10 +65,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.strCpf.delegate = self
-        self.strSenha.delegate = self
-        self.addAuxButtonsOnKeyboard()
-        self.card.layer.cornerRadius = 6
+        self.tfLogin.delegate = self
+        self.tfSenha.delegate = self
+        
+        btnEntrar.layer.cornerRadius = 5;
+        
+        
         var codigo = 0
         let defaults = NSUserDefaults.standardUserDefaults()
         codigo = defaults.integerForKey("codigo")
@@ -80,6 +85,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             principalViewController.cliente = cliente
             self.navigationController!.pushViewController(principalViewController, animated: false)
         }
+ 
     }
 
     override func didReceiveMemoryWarning() {
@@ -87,11 +93,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        if (textField == strCpf) {
+        if (textField == tfLogin) {
             //strSenha.becomeFirstResponder()
             textField.resignFirstResponder()
             return true
-        } else if (textField == strSenha) {
+        } else if (textField == tfSenha) {
             self.fazerLogin(btnLogin!)
             return true
         }
@@ -100,7 +106,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         
-        if (textField == strCpf) {
+        if (textField == tfLogin) {
             
             let strCpf = textField.text!.stringByReplacingOccurrencesOfString(".", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil)
             
@@ -134,67 +140,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func addAuxButtonsOnKeyboard()
-    {
-//        let doneToolbarCpf: UIToolbar = UIToolbar(frame: CGRectMake(0, 0, 320, 50))
-//        doneToolbarCpf.barStyle = UIBarStyle.Default
-//        
-//        let doneToolbarSenha: UIToolbar = UIToolbar(frame: CGRectMake(0, 0, 320, 50))
-//        doneToolbarSenha.barStyle = UIBarStyle.Default
-//        
-//        let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
-//        
-//        let doneCPF: UIBarButtonItem = UIBarButtonItem(title: "OK", style: UIBarButtonItemStyle.Done, target: self, action: #selector(LoginViewController.doneCPFAction))
-//    
-//        doneCPF.setTitleTextAttributes([
-//            NSFontAttributeName: UIFont(name: "Avenir", size:20)!,
-//            NSForegroundColorAttributeName: UIColor.purpleColor()],
-//                               forState: UIControlState.Normal)
-//        
-//        let doneSenha: UIBarButtonItem = UIBarButtonItem(title: "OK", style: UIBarButtonItemStyle.Done, target: self, action: #selector(LoginViewController.doneSenhaAction))
-//        
-//        doneSenha.setTitleTextAttributes([
-//            NSFontAttributeName: UIFont(name: "Avenir", size:20)!,
-//            NSForegroundColorAttributeName: UIColor.purpleColor()],
-//                                    forState: UIControlState.Normal)
-//        
-//        let cancel: UIBarButtonItem = UIBarButtonItem(title: "Cancelar", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(LoginViewController.cancelAction))
-//        
-//        cancel.setTitleTextAttributes([
-//            NSFontAttributeName: UIFont(name: "Avenir", size:20)!,
-//            NSForegroundColorAttributeName: UIColor.purpleColor()],
-//                                         forState: UIControlState.Normal)
-//        
-//        doneToolbarCpf.items = [flexSpace, doneCPF, cancel]
-//        doneToolbarCpf.sizeToFit()
-//        
-//        self.strCpf.inputAccessoryView = doneToolbarCpf
-//        
-//        let cancel2: UIBarButtonItem = UIBarButtonItem(title: "Cancelar", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(LoginViewController.cancelAction))
-//        
-//        cancel2.setTitleTextAttributes([
-//            NSFontAttributeName: UIFont(name: "Avenir", size:20)!,
-//            NSForegroundColorAttributeName: UIColor.purpleColor()],
-//                                      forState: UIControlState.Normal)
-//        
-//        doneToolbarSenha.items = [flexSpace, doneSenha, cancel2]
-//        doneToolbarSenha.sizeToFit()
-//        self.strSenha.inputAccessoryView = doneToolbarSenha
-        //1431993
-        
-    }
-    
     func doneCPFAction()
     {
-        self.strCpf.resignFirstResponder()
-        //self.strSenha.becomeFirstResponder()
+        self.tfLogin.resignFirstResponder()
     }
     
     func doneSenhaAction() {
-        if (self.strCpf.text?.characters.count > 0) {
+        if (self.tfLogin.text?.characters.count > 0) {
             self.fazerLogin(btnLogin)
         } else {
-            self.strSenha.resignFirstResponder()
+            self.tfSenha.resignFirstResponder()
             //self.strCpf.becomeFirstResponder()
             if #available(iOS 8.0, *) {
                 Alerta.alerta("Atenção", mensagem: "Informe o CPF do usuário.", viewController: self)
@@ -203,7 +158,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     func cancelAction() {
-        self.strCpf.resignFirstResponder()
-        self.strSenha.resignFirstResponder()
+        self.tfLogin.resignFirstResponder()
+        self.tfSenha.resignFirstResponder()
     }
 }

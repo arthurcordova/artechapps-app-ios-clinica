@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NovoAgendamento" customModule="BeautyClinic" customModuleProvider="target">
             <connections>
                 <outlet property="card" destination="yUd-v3-3b1" id="Boh-bc-qN1"/>
+                <outlet property="tvProcedimento" destination="cRu-HI-2oB" id="g6c-bx-BVs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
