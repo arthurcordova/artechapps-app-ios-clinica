@@ -44,6 +44,8 @@ class Dashboard: UIViewController {
     @IBAction func funcProdutos(sender: AnyObject) {
     }
     
+    @IBAction func funcBudget(sender: AnyObject) {
+    }
     
     
     override func viewDidLoad() {
