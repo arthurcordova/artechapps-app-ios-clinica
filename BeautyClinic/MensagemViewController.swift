@@ -33,10 +33,10 @@ class MensagemViewController: UIViewController, UITableViewDataSource {
     
     override func viewWillAppear(_animated: Bool) {
         super.viewWillAppear(_animated)
-        //self.navigationController?.navigationBar.backItem?.title = " "
+        self.navigationController?.navigationBar.backItem?.title = " "
         //self.navigationItem.setHidesBackButton(true, animated:true);
         self.tabBarController?.navigationItem.hidesBackButton = true
-        
+        //self.navigationItem.backBarButtonItem?.set
         self.title = "Mensagens"
         getMensagens(codCliente)
     }
