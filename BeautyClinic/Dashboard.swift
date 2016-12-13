@@ -19,6 +19,14 @@ class Dashboard: UIViewController {
         
     }
     
+    @IBAction func funcMensagens(sender: AnyObject) {
+        print("Chmando Mensagens")
+        let mensagemView = MensagemViewController(nibName: "MensagemViewController", bundle: nil)
+        //mensagemView.codCliente = "\(cliente.codCliente)"
+        mensagemView.codCliente = "999999"
+        self.navigationController!.pushViewController(mensagemView, animated: true)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
