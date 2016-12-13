@@ -22,31 +22,26 @@ class Dashboard: UIViewController {
     @IBAction func funcMensagens(sender: AnyObject) {
         print("Chmando Mensagens")
         let mensagemView = MensagemViewController(nibName: "MensagemViewController", bundle: nil)
-        //mensagemView.codCliente = "\(cliente.codCliente)"
         mensagemView.codCliente = "999999"
         self.navigationController!.pushViewController(mensagemView, animated: true)
-        
-        
-//        let viewAgendamento = AgendaViewController()
-//        viewAgendamento.cliente = cliente
-//        
-//        let viewProduto = ProdutoViewController()
-//        
-//        let viewOrcamento = OrcamentoViewController()
-//        viewOrcamento.cliente = cliente
-
-        
     }
     
     @IBAction func funcAgendamentos(sender: AnyObject) {
+        let agendaView = AgendaViewController(nibName: "AgendaViewController", bundle: nil)
+        agendaView.codCliente = "99999"
+        self.navigationController!.pushViewController(agendaView, animated: true)
     }
     
     @IBAction func funcProdutos(sender: AnyObject) {
+        let produtoView = ProdutoViewController(nibName: "ProdutoViewController", bundle: nil)
+        self.navigationController!.pushViewController(produtoView, animated: true)
     }
     
     @IBAction func funcBudget(sender: AnyObject) {
+        let orcamentoView = OrcamentoViewController(nibName: "OrcamentoViewController", bundle: nil)
+        orcamentoView.codCliente = "99999"
+        self.navigationController!.pushViewController(orcamentoView, animated: true)
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
