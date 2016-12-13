@@ -23,13 +23,13 @@ class Dashboard: UIViewController {
     @IBAction func funcMensagens(sender: AnyObject) {
         print("Chmando Mensagens")
         let mensagemView = MensagemViewController(nibName: "MensagemViewController", bundle: nil)
-        mensagemView.codCliente = "999999"
+        mensagemView.codCliente = "\(cliente.codCliente)"
         self.navigationController!.pushViewController(mensagemView, animated: true)
     }
     
     @IBAction func funcAgendamentos(sender: AnyObject) {
         let agendaView = AgendaViewController(nibName: "AgendaViewController", bundle: nil)
-        agendaView.codCliente = "99999"
+        agendaView.cliente = self.cliente
         self.navigationController!.pushViewController(agendaView, animated: true)
     }
     
@@ -40,7 +40,7 @@ class Dashboard: UIViewController {
     
     @IBAction func funcBudget(sender: AnyObject) {
         let orcamentoView = OrcamentoViewController(nibName: "OrcamentoViewController", bundle: nil)
-        orcamentoView.codCliente = "99999"
+        orcamentoView.cliente = self.cliente
         self.navigationController!.pushViewController(orcamentoView, animated: true)
     }
     
