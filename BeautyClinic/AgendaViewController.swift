@@ -15,6 +15,7 @@ class AgendaViewController: UIViewController, UITableViewDataSource {
     var codCliente: String = ""
     var cliente : Cliente!
     
+    
 
     func novoAgendamento(BtnPsgVar: UIBarButtonItem)
     {
@@ -24,6 +25,13 @@ class AgendaViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let btn1 = UIButton()
+        btn1.setImage(UIImage(named: "ico_date"), forState: .Normal)
+        btn1.frame = CGRectMake(0, 0, 30, 30)
+        btn1.addTarget(self, action: Selector("action1:"), forControlEvents: .TouchUpInside)
+        let item1 = UIBarButtonItem()
+        item1.customView = btn1
         
         self.title = "Agendamentos"
         self.navigationController!.setNavigationBarHidden(false, animated: false)

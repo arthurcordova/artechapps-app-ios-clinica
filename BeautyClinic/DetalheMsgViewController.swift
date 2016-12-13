@@ -43,5 +43,12 @@ class DetalheMsgViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    override func viewWillAppear(_animated: Bool) {
+        super.viewWillAppear(_animated)
+        self.navigationController?.navigationBar.backItem?.title = " "
+        self.tabBarController?.navigationItem.hidesBackButton = true
+        self.title = "Detalhes"
+    }
 
 }

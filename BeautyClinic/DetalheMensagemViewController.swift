@@ -37,6 +37,14 @@ class DetalheMensagemViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_animated: Bool) {
+        super.viewWillAppear(_animated)
+        self.navigationController?.navigationBar.backItem?.title = " "
+        self.tabBarController?.navigationItem.hidesBackButton = true
+        self.title = "Detalhes"
+    }
+
+    
        
 
    
