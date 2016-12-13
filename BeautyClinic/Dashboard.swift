@@ -25,7 +25,23 @@ class Dashboard: UIViewController {
         //mensagemView.codCliente = "\(cliente.codCliente)"
         mensagemView.codCliente = "999999"
         self.navigationController!.pushViewController(mensagemView, animated: true)
+        
+        
+//        let viewAgendamento = AgendaViewController()
+//        viewAgendamento.cliente = cliente
+//        
+//        let viewProduto = ProdutoViewController()
+//        
+//        let viewOrcamento = OrcamentoViewController()
+//        viewOrcamento.cliente = cliente
+
+        
     }
+    
+    @IBAction func funcAgendamentos(sender: AnyObject) {
+    }
+    
+    
     
     
     override func viewDidLoad() {
