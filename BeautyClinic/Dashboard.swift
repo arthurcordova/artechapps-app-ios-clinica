@@ -41,6 +41,8 @@ class Dashboard: UIViewController {
     @IBAction func funcAgendamentos(sender: AnyObject) {
     }
     
+    @IBAction func funcProdutos(sender: AnyObject) {
+    }
     
     
     
