@@ -10,6 +10,7 @@ import UIKit
 
 class Dashboard: UIViewController {
     
+    var cliente: Cliente!
     
     @IBOutlet var btnMenu: UIBarButtonItem!
     @IBOutlet var viewMenu: UIViewController!

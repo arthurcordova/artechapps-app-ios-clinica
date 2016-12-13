@@ -51,6 +51,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                      */
                     let dash = Dashboard(nibName: "Dashboard",
                         bundle: nil)
+                    let cliente: Cliente = Cliente()
+                    dash.cliente = Cliente()
+                    dash.cliente = cliente
+                    
                     self.navigationController!.pushViewController(dash, animated: false)
                     
                 })
@@ -81,8 +85,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 //            principalViewController.cliente = cliente
             
             let dash = Dashboard(nibName: "Dashboard", bundle: nil)
-            
-            
+            let cliente: Cliente = Cliente()
+            cliente.codCliente = codigo
+            cliente.nome = defaults.objectForKey("nome") as! String
+            dash.cliente = Cliente()
+            dash.cliente = cliente
             self.navigationController!.pushViewController(dash, animated: false)
         }
  
