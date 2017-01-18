@@ -13,6 +13,7 @@ class ProdutoViewController: UIViewController, UITableViewDataSource {
     var produtos: Array<Produto> = []
     var carrinho = Carrinho()
     var delegate: VendaProtocol?
+    var isNewAppointment = false
     @IBOutlet var tableView: UITableView!
 
     override func viewDidLoad() {
@@ -80,7 +81,8 @@ class ProdutoViewController: UIViewController, UITableViewDataSource {
         let linha = indexPath.row
         let produto = self.produtos[linha]
         
-        var qtdField: UITextField?
+        if (!isNewAppointment){
+            var qtdField: UITextField?
             let addAlerta = UIAlertController(title: "Adicionar", message: "Deseja adicionar o item ao carrinho ?", preferredStyle: UIAlertControllerStyle.Alert)
             
             addAlerta.addAction(UIAlertAction(title: "Sim", style: .Default, handler: { (action: UIAlertAction!) in
@@ -99,10 +101,17 @@ class ProdutoViewController: UIViewController, UITableViewDataSource {
                 //textField.placeholder = "Informe a quantidade"
                 qtdField = textField
             })
-            
             presentViewController(addAlerta, animated: true, completion: nil)
             self.tableView.deselectRowAtIndexPath(indexPath, animated:true)
-    }
+
+        } else {
+            
+            
+            
+        }
+        
+        
+               }
     
     @available (iOS 8.0, *)
     func getProdutos() {
