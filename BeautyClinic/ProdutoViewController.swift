@@ -101,7 +101,7 @@ class ProdutoViewController: UIViewController, UITableViewDataSource {
             })
             
             presentViewController(addAlerta, animated: true, completion: nil)
-            self.tableView.deselectRowAtIndexPath(indexPath, animated:false)
+            self.tableView.deselectRowAtIndexPath(indexPath, animated:true)
     }
     
     @available (iOS 8.0, *)

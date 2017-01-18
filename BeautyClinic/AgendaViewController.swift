@@ -15,8 +15,6 @@ class AgendaViewController: UIViewController, UITableViewDataSource {
     var codCliente: String = ""
     var cliente : Cliente!
     
-    
-
     func novoAgendamento(BtnPsgVar: UIBarButtonItem)
     {
         let agendar = NovoAgendamento(nibName: "NovoAgendamento", bundle: nil)

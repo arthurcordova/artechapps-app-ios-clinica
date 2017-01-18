@@ -27,6 +27,11 @@ class Dashboard: UIViewController {
         self.navigationController!.pushViewController(mensagemView, animated: true)
     }
     
+    @IBAction func carrinhoDetalhe(sender: AnyObject) {
+        let carrinhoView = CarrinhoViewController(nibName: "CarrinhoViewController", bundle: nil)
+        self.navigationController!.pushViewController(carrinhoView, animated: true)
+    }
+    
     @IBAction func funcAgendamentos(sender: AnyObject) {
         let agendaView = AgendaViewController(nibName: "AgendaViewController", bundle: nil)
         agendaView.cliente = self.cliente
