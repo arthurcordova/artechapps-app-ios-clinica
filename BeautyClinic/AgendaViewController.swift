@@ -63,7 +63,7 @@ class AgendaViewController: UIViewController, UITableViewDataSource {
     }
     
     func rightButtonAction(sender: UIBarButtonItem) {
-        let novoAgendamento = AgendarViewController(nibName: "AgendarViewController", bundle: nil)
+        let novoAgendamento = ProdutoViewController(nibName: "ProdutoViewController", bundle: nil)
 //        let cliente: Cliente = Cliente()
 //        cliente.codCliente = codigo
 //        cliente.nome = defaults.objectForKey("nome") as! String

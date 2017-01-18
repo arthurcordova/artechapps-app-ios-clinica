@@ -116,6 +116,8 @@
 		F42C59EE1DE3B518009C61A8 /* DetalheMensagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42C59EC1DE3B518009C61A8 /* DetalheMensagemViewController.swift */; };
 		F42C59EF1DE3B518009C61A8 /* DetalheMensagemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42C59ED1DE3B518009C61A8 /* DetalheMensagemViewController.xib */; };
 		F42C59FB1DE4FB1E009C61A8 /* img.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42C59FA1DE4FB1E009C61A8 /* img.xcassets */; };
+		F45EB2611E2F0AF1000A8E28 /* NovoAgendaProcedimentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45EB25F1E2F0AF1000A8E28 /* NovoAgendaProcedimentoViewController.swift */; };
+		F45EB2621E2F0AF1000A8E28 /* NovoAgendaProcedimentoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F45EB2601E2F0AF1000A8E28 /* NovoAgendaProcedimentoViewController.xib */; };
 		F48CC1A01DF62AE700159E4A /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48CC19E1DF62AE700159E4A /* Dashboard.swift */; };
 		F48CC1A11DF62AE700159E4A /* Dashboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48CC19F1DF62AE700159E4A /* Dashboard.xib */; };
 		F4A508FA1DFF8A0900B3F7AE /* ic_shopping_cart_white.imageset in Resources */ = {isa = PBXBuildFile; fileRef = F4A508F91DFF8A0900B3F7AE /* ic_shopping_cart_white.imageset */; };
@@ -248,6 +250,8 @@
 		F42C59EC1DE3B518009C61A8 /* DetalheMensagemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheMensagemViewController.swift; sourceTree = "<group>"; };
 		F42C59ED1DE3B518009C61A8 /* DetalheMensagemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalheMensagemViewController.xib; sourceTree = "<group>"; };
 		F42C59FA1DE4FB1E009C61A8 /* img.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = img.xcassets; sourceTree = "<group>"; };
+		F45EB25F1E2F0AF1000A8E28 /* NovoAgendaProcedimentoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovoAgendaProcedimentoViewController.swift; sourceTree = "<group>"; };
+		F45EB2601E2F0AF1000A8E28 /* NovoAgendaProcedimentoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NovoAgendaProcedimentoViewController.xib; sourceTree = "<group>"; };
 		F48CC19E1DF62AE700159E4A /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		F48CC19F1DF62AE700159E4A /* Dashboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Dashboard.xib; sourceTree = "<group>"; };
 		F4A508F91DFF8A0900B3F7AE /* ic_shopping_cart_white.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ic_shopping_cart_white.imageset; sourceTree = "<group>"; };
@@ -499,6 +503,8 @@
 				BD9C9B651DA86E170094D5FD /* PrincipalView.xib */,
 				F42C59ED1DE3B518009C61A8 /* DetalheMensagemViewController.xib */,
 				F48CC19F1DF62AE700159E4A /* Dashboard.xib */,
+				F45EB2601E2F0AF1000A8E28 /* NovoAgendaProcedimentoViewController.xib */,
+				F45EB25F1E2F0AF1000A8E28 /* NovoAgendaProcedimentoViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -598,6 +604,7 @@
 				3FFD796D1B8A000100FDFF2B /* procedimentos@2x.png in Resources */,
 				F42C59EF1DE3B518009C61A8 /* DetalheMensagemViewController.xib in Resources */,
 				3F15B7BF1B57510100CBF7C5 /* ProdOrcamentoCell.xib in Resources */,
+				F45EB2621E2F0AF1000A8E28 /* NovoAgendaProcedimentoViewController.xib in Resources */,
 				BD3AC6111DAC5A2700FD64FB /* ic_event@2x.png in Resources */,
 				3FFEBD001B2FC78D00C03FE1 /* carros_classicos.json in Resources */,
 				3FFD796B1B8A000100FDFF2B /* orcamentos@2x.png in Resources */,
@@ -714,6 +721,7 @@
 				F4F127C41DEF928D005FFEDF /* NovoAgendamento.swift in Sources */,
 				3F1B621E1B38FD210090E5C9 /* VendaViewController.swift in Sources */,
 				3FD1991D1BA85C160013BE4E /* Horario.swift in Sources */,
+				F45EB2611E2F0AF1000A8E28 /* NovoAgendaProcedimentoViewController.swift in Sources */,
 				3FFEBCFB1B2FA29500C03FE1 /* Agendamento.swift in Sources */,
 				3F8518EF1B55EA57006468E8 /* DetalheOrcamentoService.swift in Sources */,
 				3F0F32631B3627860058AADD /* LoginService.swift in Sources */,
