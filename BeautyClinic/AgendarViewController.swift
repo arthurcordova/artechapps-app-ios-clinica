@@ -191,7 +191,10 @@ class AgendarViewController: UIViewController, UICollectionViewDelegateFlowLayou
     override func viewWillAppear(_animated: Bool) {
         super.viewWillAppear(_animated)
         
-        self.title = "Agendar"
+        self.tabBarController?.navigationItem.hidesBackButton = true
+        self.navigationController?.navigationBar.backItem?.title = " "
+        
+        self.title = "Novo"
         if (self.produto.codigo > 0) {
             self.tfProcedimento.text = "\(self.produto.descricao)"
         }

@@ -49,10 +49,27 @@ class AgendaViewController: UIViewController, UITableViewDataSource {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.tabBarController?.navigationItem.hidesBackButton = true
+        self.navigationController?.navigationBar.backItem?.title = " "
+
+        let rightButtonItem = UIBarButtonItem.init(
+            title: "Novo",
+            style: .Done,
+            target: self,
+            action: #selector(AgendaViewController.rightButtonAction(_:))
+        )
         
-        let btnAdd = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(novoAgendamento(_:)))
-        self.tabBarController?.navigationItem.setRightBarButtonItem(btnAdd, animated: true)
+        self.navigationItem.rightBarButtonItem = rightButtonItem
         
+    }
+    
+    func rightButtonAction(sender: UIBarButtonItem) {
+        let novoAgendamento = AgendarViewController(nibName: "AgendarViewController", bundle: nil)
+//        let cliente: Cliente = Cliente()
+//        cliente.codCliente = codigo
+//        cliente.nome = defaults.objectForKey("nome") as! String
+//        dash.cliente = Cliente()
+//        dash.cliente = cliente
+        self.navigationController!.pushViewController(novoAgendamento, animated: true)
     }
     
     override func viewDidDisappear(animated: Bool) {
