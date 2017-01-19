@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HorariosViewController" customModule="BeautyClinic" customModuleProvider="target">
+            <connections>
+                <outlet property="datePicker" destination="RhQ-yC-k5X" id="e3y-GM-ShU"/>
+                <outlet property="gridHorarios" destination="aJE-7c-QTj" id="x56-gY-o1S"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="RhQ-yC-k5X">
+                    <rect key="frame" x="0.0" y="51" width="375" height="159"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="159" id="VgY-6o-PfD"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="506474851.41004902">
+                        <!--2017-01-18 23:27:31 +0000-->
+                    </date>
+                    <date key="minimumDate" timeIntervalSinceReferenceDate="284032800">
+                        <!--2010-01-01 10:00:00 +0000-->
+                    </date>
+                    <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                        <!--2037-12-31 11:00:00 +0000-->
+                    </date>
+                    <locale key="locale" localeIdentifier="pt_BR"/>
+                </datePicker>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QMg-aq-vl2">
+                    <rect key="frame" x="0.0" y="218" width="375" height="4"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="dRS-DL-sPV"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Selecione um horário...." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRB-gj-9Mn">
+                    <rect key="frame" x="16" y="230" width="180" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="6mM-dh-WJr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.91372549020000005" green="0.1529411765" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="aJE-7c-QTj">
+                    <rect key="frame" x="16" y="278" width="343" height="379"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EpJ-Xy-cnX">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aJE-7c-QTj" secondAttribute="trailing" constant="16" id="1Pc-78-omc"/>
+                <constraint firstAttribute="trailing" secondItem="QMg-aq-vl2" secondAttribute="trailing" id="3P8-Bz-cuf"/>
+                <constraint firstItem="aJE-7c-QTj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="4Oi-mt-HDB"/>
+                <constraint firstItem="RhQ-yC-k5X" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="Cje-yU-Th6"/>
+                <constraint firstItem="uRB-gj-9Mn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="IzS-Kb-tIc"/>
+                <constraint firstItem="QMg-aq-vl2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PHK-ie-pXv"/>
+                <constraint firstAttribute="trailing" secondItem="RhQ-yC-k5X" secondAttribute="trailing" id="TbL-kV-RNW"/>
+                <constraint firstItem="uRB-gj-9Mn" firstAttribute="top" secondItem="QMg-aq-vl2" secondAttribute="bottom" constant="8" id="UCF-7y-bB6"/>
+                <constraint firstItem="QMg-aq-vl2" firstAttribute="top" secondItem="RhQ-yC-k5X" secondAttribute="bottom" constant="8" id="Wvt-7H-qbP"/>
+                <constraint firstItem="aJE-7c-QTj" firstAttribute="top" secondItem="uRB-gj-9Mn" secondAttribute="bottom" constant="27" id="X3z-PC-g3r"/>
+                <constraint firstItem="aJE-7c-QTj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Y0m-JO-4aE"/>
+                <constraint firstItem="RhQ-yC-k5X" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aTA-ay-7Ke"/>
+                <constraint firstAttribute="bottom" secondItem="aJE-7c-QTj" secondAttribute="bottom" constant="10" id="fhg-Cv-2z2"/>
+                <constraint firstItem="QMg-aq-vl2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ojV-Re-8DK"/>
+                <constraint firstItem="RhQ-yC-k5X" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wn5-YY-ASe"/>
+            </constraints>
+            <point key="canvasLocation" x="45.5" y="87.5"/>
+        </view>
+    </objects>
+</document>

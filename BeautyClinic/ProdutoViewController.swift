@@ -106,12 +106,13 @@ class ProdutoViewController: UIViewController, UITableViewDataSource {
 
         } else {
             
-            
+            let buscaHorario = HorariosViewController(nibName: "HorariosViewController", bundle: nil)
+            self.navigationController!.pushViewController(buscaHorario, animated: true)
             
         }
         
         
-               }
+    }
     
     @available (iOS 8.0, *)
     func getProdutos() {
