@@ -17,8 +17,9 @@ class AgendaViewController: UIViewController, UITableViewDataSource {
     
     func novoAgendamento(BtnPsgVar: UIBarButtonItem)
     {
-        let agendar = NovoAgendamento(nibName: "NovoAgendamento", bundle: nil)
-        self.navigationController!.pushViewController(agendar, animated: true)
+        
+        //        let agendar = NovoAgendamento(nibName: "NovoAgendamento", bundle: nil)
+//        self.navigationController!.pushViewController(agendar, animated: true)
     }
     
     override func viewDidLoad() {
@@ -63,13 +64,21 @@ class AgendaViewController: UIViewController, UITableViewDataSource {
     }
     
     func rightButtonAction(sender: UIBarButtonItem) {
+        
+        //let mainStoryboard: UIStoryboard = UIStoryboard(name: "Teste", bundle: nil)
+        //let viewController = mainStoryboard.instantiateViewControllerWithIdentifier("testeView") as! TEsteController
+        //self.navigationController?.pushViewController(viewController, animated: true);
+
+        
         let novoAgendamento = ProdutoViewController(nibName: "ProdutoViewController", bundle: nil)
         novoAgendamento.isNewAppointment = true
+        
 //        let cliente: Cliente = Cliente()
 //        cliente.codCliente = codigo
 //        cliente.nome = defaults.objectForKey("nome") as! String
 //        dash.cliente = Cliente()
 //        dash.cliente = cliente
+        
         self.navigationController!.pushViewController(novoAgendamento, animated: true)
     }
     

@@ -24,9 +24,6 @@ class NovoAgendamento: UIViewController {
         
         textFieldDidBeginEditing(tvProcedimento)
         
-        
-        
-        
     }
     
     func textFieldDidBeginEditing(textField: UITextField) {

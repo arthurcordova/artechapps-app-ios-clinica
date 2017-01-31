@@ -28,8 +28,13 @@ class Dashboard: UIViewController {
     }
     
     @IBAction func carrinhoDetalhe(sender: AnyObject) {
-        let carrinhoView = CarrinhoViewController(nibName: "CarrinhoViewController", bundle: nil)
-        self.navigationController!.pushViewController(carrinhoView, animated: true)
+        let carrinhoStory: UIStoryboard = UIStoryboard(name: "MeuCarrinho", bundle: nil)
+        let viewController = carrinhoStory.instantiateViewControllerWithIdentifier("carrinhoControllerID") as! MeuCarrinhoController
+        self.navigationController?.pushViewController(viewController, animated: true);
+
+        
+//        let carrinhoView = CarrinhoViewController(nibName: "CarrinhoViewController", bundle: nil)
+//        self.navigationController!.pushViewController(carrinhoView, animated: true)
     }
     
     @IBAction func funcAgendamentos(sender: AnyObject) {

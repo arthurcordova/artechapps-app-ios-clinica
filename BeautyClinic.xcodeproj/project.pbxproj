@@ -118,6 +118,9 @@
 		F42C59FB1DE4FB1E009C61A8 /* img.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42C59FA1DE4FB1E009C61A8 /* img.xcassets */; };
 		F450BE1F1E303108003B4BAC /* HorariosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450BE1D1E303108003B4BAC /* HorariosViewController.swift */; };
 		F450BE201E303108003B4BAC /* HorariosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F450BE1E1E303108003B4BAC /* HorariosViewController.xib */; };
+		F47218F91E400A340055F388 /* Caller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47218F81E400A340055F388 /* Caller.swift */; };
+		F47218FB1E400C110055F388 /* MeuCarrinho.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47218FA1E400C110055F388 /* MeuCarrinho.storyboard */; };
+		F47218FD1E400C630055F388 /* MeuCarrinhoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47218FC1E400C630055F388 /* MeuCarrinhoController.swift */; };
 		F48CC1A01DF62AE700159E4A /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48CC19E1DF62AE700159E4A /* Dashboard.swift */; };
 		F48CC1A11DF62AE700159E4A /* Dashboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48CC19F1DF62AE700159E4A /* Dashboard.xib */; };
 		F4A508FA1DFF8A0900B3F7AE /* ic_shopping_cart_white.imageset in Resources */ = {isa = PBXBuildFile; fileRef = F4A508F91DFF8A0900B3F7AE /* ic_shopping_cart_white.imageset */; };
@@ -252,6 +255,9 @@
 		F42C59FA1DE4FB1E009C61A8 /* img.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = img.xcassets; sourceTree = "<group>"; };
 		F450BE1D1E303108003B4BAC /* HorariosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorariosViewController.swift; sourceTree = "<group>"; };
 		F450BE1E1E303108003B4BAC /* HorariosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorariosViewController.xib; sourceTree = "<group>"; };
+		F47218F81E400A340055F388 /* Caller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caller.swift; sourceTree = "<group>"; };
+		F47218FA1E400C110055F388 /* MeuCarrinho.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MeuCarrinho.storyboard; sourceTree = "<group>"; };
+		F47218FC1E400C630055F388 /* MeuCarrinhoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeuCarrinhoController.swift; sourceTree = "<group>"; };
 		F48CC19E1DF62AE700159E4A /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		F48CC19F1DF62AE700159E4A /* Dashboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Dashboard.xib; sourceTree = "<group>"; };
 		F4A508F91DFF8A0900B3F7AE /* ic_shopping_cart_white.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ic_shopping_cart_white.imageset; sourceTree = "<group>"; };
@@ -450,6 +456,7 @@
 				3F9248861BAF0CC600BEB1B0 /* PrincipalViewController.swift */,
 				3F02955D1B438129009510E4 /* ProdutoViewController.swift */,
 				3F1B621C1B38FD210090E5C9 /* VendaViewController.swift */,
+				F47218FC1E400C630055F388 /* MeuCarrinhoController.swift */,
 			);
 			name = Control;
 			sourceTree = "<group>";
@@ -470,6 +477,7 @@
 				3F30502A1D373A4600719913 /* MedicoService.swift */,
 				3FACB6111BD297EC0092826B /* VendaProtocol.swift */,
 				3F0F32641B362B1B0058AADD /* AgendaCell.swift */,
+				F47218F81E400A340055F388 /* Caller.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -496,6 +504,7 @@
 				3FF961841B54B46600E7D7A8 /* OrcamentoViewController.xib */,
 				3FD199231BA88E9B0013BE4E /* PesquisaProdViewController.xib */,
 				3F9248871BAF0CC600BEB1B0 /* PrincipalViewController.xib */,
+				F47218FA1E400C110055F388 /* MeuCarrinho.storyboard */,
 				3F02955E1B438129009510E4 /* ProdutoViewController.xib */,
 				3F1B621D1B38FD210090E5C9 /* VendaViewController.xib */,
 				3FFEBCBF1B2F949500C03FE1 /* LaunchScreen.xib */,
@@ -635,6 +644,7 @@
 				3F9248891BAF0CC600BEB1B0 /* PrincipalViewController.xib in Resources */,
 				3FFEBD021B2FC78D00C03FE1 /* login.json in Resources */,
 				3F1B621F1B38FD210090E5C9 /* VendaViewController.xib in Resources */,
+				F47218FB1E400C110055F388 /* MeuCarrinho.storyboard in Resources */,
 				BD961B1C1DBBC9F7000421BE /* ic_shopping_cart_3x.png in Resources */,
 				3F5EFF471BC1786000D9C411 /* envelope.png in Resources */,
 				F42C59FB1DE4FB1E009C61A8 /* img.xcassets in Resources */,
@@ -687,6 +697,7 @@
 				3FF9618A1B54BBCD00E7D7A8 /* OrcamentoCell.swift in Sources */,
 				F42C59EE1DE3B518009C61A8 /* DetalheMensagemViewController.swift in Sources */,
 				3F66CA341B44D78C00A78C64 /* Aviso.swift in Sources */,
+				F47218FD1E400C630055F388 /* MeuCarrinhoController.swift in Sources */,
 				3F1B62231B38FF5A0090E5C9 /* VendaCell.swift in Sources */,
 				3FD5A2BA1BA70D1100B9F4B9 /* Mensagem.swift in Sources */,
 				3FE34ED31B5753B3003A254D /* DetalheOrcViewController.swift in Sources */,
@@ -722,6 +733,7 @@
 				F4F127C41DEF928D005FFEDF /* NovoAgendamento.swift in Sources */,
 				3F1B621E1B38FD210090E5C9 /* VendaViewController.swift in Sources */,
 				3FD1991D1BA85C160013BE4E /* Horario.swift in Sources */,
+				F47218F91E400A340055F388 /* Caller.swift in Sources */,
 				3FFEBCFB1B2FA29500C03FE1 /* Agendamento.swift in Sources */,
 				3F8518EF1B55EA57006468E8 /* DetalheOrcamentoService.swift in Sources */,
 				3F0F32631B3627860058AADD /* LoginService.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HorariosViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UITextFieldDelegate, UtilProtocol {
+class HorariosViewController: UIViewController {
     
     @IBOutlet var datePicker: UIDatePicker!
     @IBOutlet var gridHorarios: UICollectionView!
