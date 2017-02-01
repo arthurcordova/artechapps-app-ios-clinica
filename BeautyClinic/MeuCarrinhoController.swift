@@ -11,7 +11,17 @@ import UIKit
 class MeuCarrinhoController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet var lblValor: UILabel!
+    @IBOutlet var tableView: UITableView!
     
+    let textForFirstTableView = ["Italian food", "Mexican food", "Croatian food", "Spanish food", "French food"]
+    
+    let namesOfFood = [["Bolognese", "Milagnese","Pizza"],
+                       ["Tortilla", "Chimichanga", "Paella"],
+                       ["Burek od mesa","Grah", "Janjetina"],
+                       ["Tapas", "Churros", "Flan"],
+                       ["Buche de Noel", "Cherry Cake", "Onion Soup"]]
+    
+    var ObjectNamesOfFood = [String]()
     
     @IBAction func funcBack(sender: AnyObject) {
         self.navigationController?.popViewControllerAnimated(true);
@@ -19,36 +29,56 @@ class MeuCarrinhoController: UIViewController, UITableViewDataSource, UITableVie
     
     @IBAction func funcFinalizar(sender: AnyObject) {
         
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         
     }
+    
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
-    func tableView(tableView: UITableView, cellForRowAt indexPath: NSIndexPath) -> UITableViewCell {
-//        let cell:FilmeCellTableViewCell = table.dequeueReusableCell(withIdentifier: cellIdentifier) as! FilmeCellTableViewCell!
-//        let filme = self.filmes[indexPath.row] as Filme
-//        cell.titulo?.text = filme.titulo
-//        cell.subtitulo?.text = filme.subTitulo
-//        cell.duracao?.text = filme.duracao
-//        return cell
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        
+        cell.textLabel?.text = "Section \(indexPath.section) Row \(indexPath.row)"
+        return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAt indexPath: NSIndexPath) {
-//        let filme = filmes[indexPath.row]
-//        let addAlerta = UIAlertController(title: "Remover", message: "Deseja remover o filme " + filme.titulo + " dos favoritos ?", preferredStyle: UIAlertControllerStyle.alert)
-//        addAlerta.addAction(UIAlertAction(title: "Sim", style: .default, handler: { (action: UIAlertAction!) in
-//            Favorito.Data.filmes.remove(at: indexPath.row)
-//            self.filmes = Favorito.Data.filmes
-//            self.table.reloadData()
-//            
-//        }))
-//        
-//        addAlerta.addAction(UIAlertAction(title: "Não", style: .cancel, handler: nil))
-//        present(addAlerta, animated: true, completion: nil)
-//        self.table.deselectRow(at: indexPath, animated:true)
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
     }
+    
+    
+//    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        
+//        return textForFirstTableView.count
+//        
+//    }
+//    
+//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//        
+//        let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell!
+//        
+//        cell.textLabel?.text = textForFirstTableView[indexPath.row]
+//        
+//        return cell
+//        
+//    }
+//    
+//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        
+//        self.ObjectNamesOfFood = self.namesOfFood[indexPath.row]
+//        
+//        self.performSegueWithIdentifier("Segue", sender: self)
+//        
+//    }
     
 }
