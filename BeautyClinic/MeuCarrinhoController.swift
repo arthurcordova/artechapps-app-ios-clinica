@@ -13,6 +13,12 @@ class MeuCarrinhoController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet var lblValor: UILabel!
     @IBOutlet var tableView: UITableView!
     
+    @IBInspectable var cornerRadius: CGFloat = 2
+    @IBInspectable var shadowOffsetWidth: Int = 0
+    @IBInspectable var shadowOffsetHeight: Int = 3
+    @IBInspectable var shadowColor: UIColor? = UIColor.blackColor()
+    @IBInspectable var shadowOpacity: Float = 0.5
+    
     let textForFirstTableView = ["Italian food", "Mexican food", "Croatian food", "Spanish food", "French food"]
     
     let namesOfFood = [["Bolognese", "Milagnese","Pizza"],
@@ -37,6 +43,9 @@ class MeuCarrinhoController: UIViewController, UITableViewDataSource, UITableVie
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
+        let xib = UINib(nibName: "CarrinhoCell", bundle: nil)
+        self.tableView.registerNib(xib, forCellReuseIdentifier: "cell")
+        
     }
     
     
@@ -46,14 +55,23 @@ class MeuCarrinhoController: UIViewController, UITableViewDataSource, UITableVie
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CarrinhoCell
+        createCardEffect(cell.cardView)
         
-        cell.textLabel?.text = "Section \(indexPath.section) Row \(indexPath.row)"
+        
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
+    }
+    
+    func createCardEffect(view: UIView) {
+        view.layer.cornerRadius = cornerRadius
+        view.layer.masksToBounds = false
+        view.layer.shadowColor = shadowColor?.CGColor
+        view.layer.shadowOffset = CGSize(width: shadowOffsetWidth, height: shadowOffsetHeight);
+        view.layer.shadowOpacity = shadowOpacity
     }
     
     

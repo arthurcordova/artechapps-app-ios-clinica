@@ -11,8 +11,9 @@ import UIKit
 
 class CarrinhoCell: UITableViewCell {
     
-    @IBOutlet var descProduto: UILabel!
-    @IBOutlet var qtdProduto: UILabel!
-    @IBOutlet var vlrUnitario: UILabel!
+    @IBOutlet var cardView: UIView!
+    
+   
+    
     
 }

@@ -38,9 +38,9 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource {
         
         let produto = carrinho.Produtos[row]
         
-        cell.descProduto.text = produto.descricao
-        cell.qtdProduto.text = "Quantidade: "+produto.quantidade
-        cell.vlrUnitario.text = "Valor: R$ \(produto.preco)"
+//        cell.descProduto.text = produto.descricao
+//        cell.qtdProduto.text = "Quantidade: "+produto.quantidade
+//        cell.vlrUnitario.text = "Valor: R$ \(produto.preco)"
         
         return cell
     }
