@@ -50,9 +50,16 @@ class MeuCarrinhoController: UIViewController, UITableViewDataSource, UITableVie
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CarrinhoCell
+        
         createCardEffect(cell.cardView)
         
+        let content = list[indexPath.row]
+        var contentArray = content.characters.split(";").map(String.init)
         
+        cell.descricao?.text = contentArray[1]
+        cell.quantidade?.text = contentArray[2]
+        cell.valor?.text = contentArray[3]
+       
         return cell
     }
     
@@ -67,30 +74,4 @@ class MeuCarrinhoController: UIViewController, UITableViewDataSource, UITableVie
         view.layer.shadowOffset = CGSize(width: shadowOffsetWidth, height: shadowOffsetHeight);
         view.layer.shadowOpacity = shadowOpacity
     }
-    
-    
-//    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        
-//        return textForFirstTableView.count
-//        
-//    }
-//    
-//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        
-//        let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell!
-//        
-//        cell.textLabel?.text = textForFirstTableView[indexPath.row]
-//        
-//        return cell
-//        
-//    }
-//    
-//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        
-//        self.ObjectNamesOfFood = self.namesOfFood[indexPath.row]
-//        
-//        self.performSegueWithIdentifier("Segue", sender: self)
-//        
-//    }
-    
 }

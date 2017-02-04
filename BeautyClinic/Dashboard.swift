@@ -31,8 +31,8 @@ class Dashboard: UIViewController {
         var list = Array<String>()
         let dao = CarrinhoDAO()
         
-        list.append("Teste 01")
-        list.append("Teste 02")
+        list.append("213123;Produto Nome 01;1;500,00")
+        list.append("098765;Produto Nome 02;1;399,00")
         
         dao.saveProducts(list)
         

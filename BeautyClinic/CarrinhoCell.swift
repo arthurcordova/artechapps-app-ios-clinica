@@ -12,8 +12,16 @@ import UIKit
 class CarrinhoCell: UITableViewCell {
     
     @IBOutlet var cardView: UIView!
+    @IBOutlet var descricao: UILabel!
+    @IBOutlet var quantidade: UILabel!
+    @IBOutlet var valor: UILabel!
     
+    @IBAction func add(sender: AnyObject) {
+    }
    
+    @IBAction func remove(sender: AnyObject) {
+    }
     
+    @IBOutlet var removeAll: UIButton!
     
 }
