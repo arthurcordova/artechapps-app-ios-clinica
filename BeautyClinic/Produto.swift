@@ -8,12 +8,16 @@
 
 import Foundation
 
-class Produto {
+class Produto: NSObject {
     
     var codigo: Int = 0
     var descricao: String = ""
     var preco: Float = 0.00
     var quantidade: String = "0"
     var tipoExame: String = "T"
+    
+    override init() {
+        super.init()
+    }
     
 }

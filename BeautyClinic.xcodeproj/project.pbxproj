@@ -47,7 +47,6 @@
 		3F9248891BAF0CC600BEB1B0 /* PrincipalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F9248871BAF0CC600BEB1B0 /* PrincipalViewController.xib */; };
 		3F9EF3241B49A5EC00853DA0 /* procedimento.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9EF3231B49A5EC00853DA0 /* procedimento.png */; };
 		3FA0F35B1BD453C700E6B974 /* CarrinhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0F3591BD453C700E6B974 /* CarrinhoViewController.swift */; };
-		3FA0F35C1BD453C700E6B974 /* CarrinhoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FA0F35A1BD453C700E6B974 /* CarrinhoViewController.xib */; };
 		3FA0F35E1BD457CE00E6B974 /* CarrinhoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0F35D1BD457CE00E6B974 /* CarrinhoCell.swift */; };
 		3FA0F3601BD458BF00E6B974 /* CarrinhoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FA0F35F1BD458BF00E6B974 /* CarrinhoCell.xib */; };
 		3FACB6101BD296A20092826B /* Carrinho.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACB60F1BD296A20092826B /* Carrinho.swift */; };
@@ -118,6 +117,7 @@
 		F42C59FB1DE4FB1E009C61A8 /* img.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42C59FA1DE4FB1E009C61A8 /* img.xcassets */; };
 		F450BE1F1E303108003B4BAC /* HorariosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450BE1D1E303108003B4BAC /* HorariosViewController.swift */; };
 		F450BE201E303108003B4BAC /* HorariosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F450BE1E1E303108003B4BAC /* HorariosViewController.xib */; };
+		F46E47691E46472C0022EEB7 /* CarrinhoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46E47681E46472C0022EEB7 /* CarrinhoDAO.swift */; };
 		F47218F91E400A340055F388 /* Caller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47218F81E400A340055F388 /* Caller.swift */; };
 		F47218FB1E400C110055F388 /* MeuCarrinho.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47218FA1E400C110055F388 /* MeuCarrinho.storyboard */; };
 		F47218FD1E400C630055F388 /* MeuCarrinhoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47218FC1E400C630055F388 /* MeuCarrinhoController.swift */; };
@@ -180,7 +180,6 @@
 		3F9248871BAF0CC600BEB1B0 /* PrincipalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrincipalViewController.xib; sourceTree = "<group>"; };
 		3F9EF3231B49A5EC00853DA0 /* procedimento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = procedimento.png; sourceTree = "<group>"; };
 		3FA0F3591BD453C700E6B974 /* CarrinhoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrinhoViewController.swift; sourceTree = "<group>"; };
-		3FA0F35A1BD453C700E6B974 /* CarrinhoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarrinhoViewController.xib; sourceTree = "<group>"; };
 		3FA0F35D1BD457CE00E6B974 /* CarrinhoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrinhoCell.swift; sourceTree = "<group>"; };
 		3FA0F35F1BD458BF00E6B974 /* CarrinhoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarrinhoCell.xib; sourceTree = "<group>"; };
 		3FACB60F1BD296A20092826B /* Carrinho.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Carrinho.swift; sourceTree = "<group>"; };
@@ -255,6 +254,7 @@
 		F42C59FA1DE4FB1E009C61A8 /* img.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = img.xcassets; sourceTree = "<group>"; };
 		F450BE1D1E303108003B4BAC /* HorariosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorariosViewController.swift; sourceTree = "<group>"; };
 		F450BE1E1E303108003B4BAC /* HorariosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorariosViewController.xib; sourceTree = "<group>"; };
+		F46E47681E46472C0022EEB7 /* CarrinhoDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrinhoDAO.swift; sourceTree = "<group>"; };
 		F47218F81E400A340055F388 /* Caller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caller.swift; sourceTree = "<group>"; };
 		F47218FA1E400C110055F388 /* MeuCarrinho.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MeuCarrinho.storyboard; sourceTree = "<group>"; };
 		F47218FC1E400C630055F388 /* MeuCarrinhoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeuCarrinhoController.swift; sourceTree = "<group>"; };
@@ -478,6 +478,7 @@
 				3FACB6111BD297EC0092826B /* VendaProtocol.swift */,
 				3F0F32641B362B1B0058AADD /* AgendaCell.swift */,
 				F47218F81E400A340055F388 /* Caller.swift */,
+				F46E47681E46472C0022EEB7 /* CarrinhoDAO.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -497,7 +498,6 @@
 				3F1B62201B38FED60090E5C9 /* VendaCell.xib */,
 				3F54A33A1BA4798400383429 /* AgendarViewController.xib */,
 				3F273AC21B35D06C00267B0B /* AgendaViewController.xib */,
-				3FA0F35A1BD453C700E6B974 /* CarrinhoViewController.xib */,
 				3FE34ED21B5753B3003A254D /* DetalheOrcViewController.xib */,
 				3FFEBCF51B2F994F00C03FE1 /* LoginViewController.xib */,
 				3FD5A2B61BA70A1300B9F4B9 /* MensagemViewController.xib */,
@@ -608,7 +608,6 @@
 				F450BE201E303108003B4BAC /* HorariosViewController.xib in Resources */,
 				3F0295601B438129009510E4 /* ProdutoViewController.xib in Resources */,
 				3FFD79661B8A000100FDFF2B /* agendamentos.png in Resources */,
-				3FA0F35C1BD453C700E6B974 /* CarrinhoViewController.xib in Resources */,
 				3FFEBD011B2FC78D00C03FE1 /* produtos.json in Resources */,
 				3FF961881B54BAD800E7D7A8 /* OrcamentoCell.xib in Resources */,
 				3FFD796D1B8A000100FDFF2B /* procedimentos@2x.png in Resources */,
@@ -703,6 +702,7 @@
 				3FE34ED31B5753B3003A254D /* DetalheOrcViewController.swift in Sources */,
 				3F1B62191B38FA6F0090E5C9 /* Venda.swift in Sources */,
 				3F6756CD1B659B0E006B9154 /* Cliente.swift in Sources */,
+				F46E47691E46472C0022EEB7 /* CarrinhoDAO.swift in Sources */,
 				3F66CA361B44D81000A78C64 /* AvisoService.swift in Sources */,
 				F450BE1F1E303108003B4BAC /* HorariosViewController.swift in Sources */,
 				3F1B621B1B38FB030090E5C9 /* VendaService.swift in Sources */,

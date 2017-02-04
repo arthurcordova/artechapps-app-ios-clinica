@@ -18,16 +18,8 @@ class MeuCarrinhoController: UIViewController, UITableViewDataSource, UITableVie
     @IBInspectable var shadowOffsetHeight: Int = 3
     @IBInspectable var shadowColor: UIColor? = UIColor.blackColor()
     @IBInspectable var shadowOpacity: Float = 0.5
-    
-    let textForFirstTableView = ["Italian food", "Mexican food", "Croatian food", "Spanish food", "French food"]
-    
-    let namesOfFood = [["Bolognese", "Milagnese","Pizza"],
-                       ["Tortilla", "Chimichanga", "Paella"],
-                       ["Burek od mesa","Grah", "Janjetina"],
-                       ["Tapas", "Churros", "Flan"],
-                       ["Buche de Noel", "Cherry Cake", "Onion Soup"]]
-    
-    var ObjectNamesOfFood = [String]()
+  
+    var list = Array<String>()
     
     @IBAction func funcBack(sender: AnyObject) {
         self.navigationController?.popViewControllerAnimated(true);
@@ -40,6 +32,8 @@ class MeuCarrinhoController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let dao = CarrinhoDAO()
+        self.list = dao.loadProducts();
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
@@ -50,7 +44,7 @@ class MeuCarrinhoController: UIViewController, UITableViewDataSource, UITableVie
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return list.count
     }
     
     

@@ -28,6 +28,15 @@ class Dashboard: UIViewController {
     }
     
     @IBAction func carrinhoDetalhe(sender: AnyObject) {
+        var list = Array<String>()
+        let dao = CarrinhoDAO()
+        
+        list.append("Teste 01")
+        list.append("Teste 02")
+        
+        dao.saveProducts(list)
+        
+        
         let carrinhoStory: UIStoryboard = UIStoryboard(name: "MeuCarrinho", bundle: nil)
         let viewController = carrinhoStory.instantiateViewControllerWithIdentifier("carrinhoControllerID") as! MeuCarrinhoController
         self.navigationController?.pushViewController(viewController, animated: true);
