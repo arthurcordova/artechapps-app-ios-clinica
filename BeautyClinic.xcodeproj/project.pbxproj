@@ -124,6 +124,7 @@
 		F48CC1A01DF62AE700159E4A /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48CC19E1DF62AE700159E4A /* Dashboard.swift */; };
 		F48CC1A11DF62AE700159E4A /* Dashboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48CC19F1DF62AE700159E4A /* Dashboard.xib */; };
 		F4A508FA1DFF8A0900B3F7AE /* ic_shopping_cart_white.imageset in Resources */ = {isa = PBXBuildFile; fileRef = F4A508F91DFF8A0900B3F7AE /* ic_shopping_cart_white.imageset */; };
+		F4C6DBD21E492CB40001B090 /* CarrinhoStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C6DBD11E492CB40001B090 /* CarrinhoStruct.swift */; };
 		F4F127C41DEF928D005FFEDF /* NovoAgendamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F127C21DEF928D005FFEDF /* NovoAgendamento.swift */; };
 		F4F127C51DEF928D005FFEDF /* NovoAgendamento.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4F127C31DEF928D005FFEDF /* NovoAgendamento.xib */; };
 		F4F127C71DF10365005FFEDF /* arrow.svg in Resources */ = {isa = PBXBuildFile; fileRef = F4F127C61DF10365005FFEDF /* arrow.svg */; };
@@ -261,6 +262,7 @@
 		F48CC19E1DF62AE700159E4A /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		F48CC19F1DF62AE700159E4A /* Dashboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Dashboard.xib; sourceTree = "<group>"; };
 		F4A508F91DFF8A0900B3F7AE /* ic_shopping_cart_white.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ic_shopping_cart_white.imageset; sourceTree = "<group>"; };
+		F4C6DBD11E492CB40001B090 /* CarrinhoStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrinhoStruct.swift; sourceTree = "<group>"; };
 		F4F127C21DEF928D005FFEDF /* NovoAgendamento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovoAgendamento.swift; sourceTree = "<group>"; };
 		F4F127C31DEF928D005FFEDF /* NovoAgendamento.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NovoAgendamento.xib; sourceTree = "<group>"; };
 		F4F127C61DF10365005FFEDF /* arrow.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = arrow.svg; sourceTree = "<group>"; };
@@ -415,6 +417,7 @@
 				3F02955B1B4380C5009510E4 /* Produto.swift */,
 				3F8518F01B560072006468E8 /* ProdutoOrcamento.swift */,
 				3F1B62181B38FA6F0090E5C9 /* Venda.swift */,
+				F4C6DBD11E492CB40001B090 /* CarrinhoStruct.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -689,6 +692,7 @@
 				3F0295661B438D44009510E4 /* ProdutoService.swift in Sources */,
 				3FADF9291D33461800C3F1F1 /* DatePickerDialog.swift in Sources */,
 				3F15B7BD1B57507500CBF7C5 /* ProdOrcamentoCell.swift in Sources */,
+				F4C6DBD21E492CB40001B090 /* CarrinhoStruct.swift in Sources */,
 				3FD5A2C41BA718DF00B9F4B9 /* MensagemCell.swift in Sources */,
 				3FFEBCB71B2F949500C03FE1 /* AppDelegate.swift in Sources */,
 				3FD5A2C81BA71C1F00B9F4B9 /* MensagemService.swift in Sources */,

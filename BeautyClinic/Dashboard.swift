@@ -10,10 +10,12 @@ import UIKit
 
 class Dashboard: UIViewController {
     
-    var cliente: Cliente!
-    
     @IBOutlet var btnMenu: UIBarButtonItem!
     @IBOutlet var viewMenu: UIViewController!
+    
+    var cliente: Cliente!
+    var list: Array<String> = []
+    
     
     @IBAction func funcMenu(sender: AnyObject) {
         print("Apertou menu")
@@ -28,17 +30,18 @@ class Dashboard: UIViewController {
     }
     
     @IBAction func carrinhoDetalhe(sender: AnyObject) {
-        var list = Array<String>()
-        let dao = CarrinhoDAO()
+//        var list = Array<String>()
+//        let dao = CarrinhoDAO()
         
-        list.append("213123;Produto Nome 01;1;500,00")
-        list.append("098765;Produto Nome 02;1;399,00")
+//        list.append("213123;Produto Nome 01;1;500,00")
+//        list.append("098765;Produto Nome 02;1;399,00")
         
-        dao.saveProducts(list)
+//        dao.saveProducts(list)
         
         
         let carrinhoStory: UIStoryboard = UIStoryboard(name: "MeuCarrinho", bundle: nil)
         let viewController = carrinhoStory.instantiateViewControllerWithIdentifier("carrinhoControllerID") as! MeuCarrinhoController
+        viewController.dashboard = self
         self.navigationController?.pushViewController(viewController, animated: true);
 
         
@@ -54,6 +57,7 @@ class Dashboard: UIViewController {
     
     @IBAction func funcProdutos(sender: AnyObject) {
         let produtoView = ProdutoViewController(nibName: "ProdutoViewController", bundle: nil)
+        produtoView.dashboard = self
         self.navigationController!.pushViewController(produtoView, animated: true)
     }
     

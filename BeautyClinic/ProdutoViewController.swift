@@ -12,6 +12,7 @@ class ProdutoViewController: UIViewController, UITableViewDataSource {
     
     var produtos: Array<Produto> = []
     var carrinho = Carrinho()
+    var dashboard: Dashboard?
     var delegate: VendaProtocol?
     var isNewAppointment = false
     @IBOutlet var tableView: UITableView!
@@ -86,21 +87,33 @@ class ProdutoViewController: UIViewController, UITableViewDataSource {
             let addAlerta = UIAlertController(title: "Adicionar", message: "Deseja adicionar o item ao carrinho ?", preferredStyle: UIAlertControllerStyle.Alert)
             
             addAlerta.addAction(UIAlertAction(title: "Sim", style: .Default, handler: { (action: UIAlertAction!) in
-                if (qtdField!.text == "0") {
-                    produto.quantidade = "1"
-                } else {
-                    produto.quantidade = qtdField!.text!
-                }
-                self.carrinho.adicionarProduto(produto)
+//                if (qtdField!.text == "0") {
+//                    produto.quantidade = "1"
+//                } else {
+//                    produto.quantidade = qtdField!.text!
+//                }
+                //self.carrinho.adicionarProduto(produto)
+                //"213123;Produto Nome 01;1;500,00"
+                let valor :String = String(format:"%.2f", produto.preco)
+                let product = "\(produto.codigo)" + ";" + "\(produto.descricao)" + ";" + "1" + ";"+valor
+                self.dashboard?.list.append(product)
+//                self.carrinhoStruct.
+//                
+//                
+//                var array = Array<String>()
+//                array.append(product)
+//                self.dao.saveProducts(array)
+                
+                
             }))
             
             addAlerta.addAction(UIAlertAction(title: "Não", style: .Cancel, handler: nil))
             
-            addAlerta.addTextFieldWithConfigurationHandler({(textField: UITextField!) in
-                textField.text = "1"
-                //textField.placeholder = "Informe a quantidade"
-                qtdField = textField
-            })
+//            addAlerta.addTextFieldWithConfigurationHandler({(textField: UITextField!) in
+//                textField.text = "1"
+//                //textField.placeholder = "Informe a quantidade"
+//                qtdField = textField
+//            })
             presentViewController(addAlerta, animated: true, completion: nil)
             self.tableView.deselectRowAtIndexPath(indexPath, animated:true)
 

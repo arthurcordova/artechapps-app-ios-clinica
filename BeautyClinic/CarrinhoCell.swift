@@ -24,4 +24,8 @@ class CarrinhoCell: UITableViewCell {
     
     @IBOutlet var removeAll: UIButton!
     
+    @IBAction func deleteAll(sender: AnyObject) {
+        let dao = CarrinhoDAO()
+        dao.removeProduct()
+    }
 }

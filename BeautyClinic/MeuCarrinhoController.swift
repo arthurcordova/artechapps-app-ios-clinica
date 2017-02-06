@@ -20,6 +20,7 @@ class MeuCarrinhoController: UIViewController, UITableViewDataSource, UITableVie
     @IBInspectable var shadowOpacity: Float = 0.5
   
     var list = Array<String>()
+    var dashboard: Dashboard?
     
     @IBAction func funcBack(sender: AnyObject) {
         self.navigationController?.popViewControllerAnimated(true);
@@ -32,8 +33,9 @@ class MeuCarrinhoController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let dao = CarrinhoDAO()
-        self.list = dao.loadProducts();
+//        let dao = CarrinhoDAO()
+        self.list = (dashboard?.list)!
+        
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
@@ -55,6 +57,8 @@ class MeuCarrinhoController: UIViewController, UITableViewDataSource, UITableVie
         
         let content = list[indexPath.row]
         var contentArray = content.characters.split(";").map(String.init)
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
+        
         
         cell.descricao?.text = contentArray[1]
         cell.quantidade?.text = contentArray[2]

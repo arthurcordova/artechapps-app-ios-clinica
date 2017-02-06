@@ -18,6 +18,7 @@ class CarrinhoDAO {
         productArchive = "\(dir)/products"
     }
     
+    //"213123;Produto Nome 01;1;500,00"
     func saveProducts(products: Array<String>) {
         NSKeyedArchiver.archiveRootObject(products, toFile: productArchive)
     }
@@ -28,6 +29,14 @@ class CarrinhoDAO {
             return loaded as! Array<String>
         }
         return Array<String>()
+    }
+    
+    func removeProduct() {
+        do {
+            try NSFileManager.defaultManager().removeItemAtPath(productArchive)
+        } catch {
+            
+        }
     }
     
 }
