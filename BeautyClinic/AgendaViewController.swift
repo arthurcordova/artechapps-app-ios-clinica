@@ -106,7 +106,11 @@ class AgendaViewController: UIViewController, UITableViewDataSource {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if #available(iOS 8.0, *) {
-            Alerta.alerta("Detalhes", mensagem: "Desc procedimento", viewController: self)
+            let detalhe: UIStoryboard = UIStoryboard(name: "DetalheAgendamento", bundle: nil)
+            let viewController = detalhe.instantiateViewControllerWithIdentifier("detalheAgendaControllerID") as! DetalheAgendamentoController
+            viewController.agendamento = self.agendamentos[indexPath.row]
+            self.navigationController?.pushViewController(viewController, animated: true);
+            
         } else {
             // Fallback on earlier versions
         }

@@ -115,6 +115,8 @@
 		F42C59EE1DE3B518009C61A8 /* DetalheMensagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42C59EC1DE3B518009C61A8 /* DetalheMensagemViewController.swift */; };
 		F42C59EF1DE3B518009C61A8 /* DetalheMensagemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42C59ED1DE3B518009C61A8 /* DetalheMensagemViewController.xib */; };
 		F42C59FB1DE4FB1E009C61A8 /* img.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42C59FA1DE4FB1E009C61A8 /* img.xcassets */; };
+		F45094A41E4A9A1600A9A05D /* DetalheAgendamento.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45094A31E4A9A1600A9A05D /* DetalheAgendamento.storyboard */; };
+		F45094A61E4A9A6800A9A05D /* DetalheAgendamentoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45094A51E4A9A6800A9A05D /* DetalheAgendamentoController.swift */; };
 		F450BE1F1E303108003B4BAC /* HorariosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450BE1D1E303108003B4BAC /* HorariosViewController.swift */; };
 		F450BE201E303108003B4BAC /* HorariosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F450BE1E1E303108003B4BAC /* HorariosViewController.xib */; };
 		F46E47691E46472C0022EEB7 /* CarrinhoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46E47681E46472C0022EEB7 /* CarrinhoDAO.swift */; };
@@ -253,6 +255,8 @@
 		F42C59EC1DE3B518009C61A8 /* DetalheMensagemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheMensagemViewController.swift; sourceTree = "<group>"; };
 		F42C59ED1DE3B518009C61A8 /* DetalheMensagemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalheMensagemViewController.xib; sourceTree = "<group>"; };
 		F42C59FA1DE4FB1E009C61A8 /* img.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = img.xcassets; sourceTree = "<group>"; };
+		F45094A31E4A9A1600A9A05D /* DetalheAgendamento.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetalheAgendamento.storyboard; sourceTree = "<group>"; };
+		F45094A51E4A9A6800A9A05D /* DetalheAgendamentoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheAgendamentoController.swift; sourceTree = "<group>"; };
 		F450BE1D1E303108003B4BAC /* HorariosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorariosViewController.swift; sourceTree = "<group>"; };
 		F450BE1E1E303108003B4BAC /* HorariosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorariosViewController.xib; sourceTree = "<group>"; };
 		F46E47681E46472C0022EEB7 /* CarrinhoDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrinhoDAO.swift; sourceTree = "<group>"; };
@@ -460,6 +464,7 @@
 				3F02955D1B438129009510E4 /* ProdutoViewController.swift */,
 				3F1B621C1B38FD210090E5C9 /* VendaViewController.swift */,
 				F47218FC1E400C630055F388 /* MeuCarrinhoController.swift */,
+				F45094A51E4A9A6800A9A05D /* DetalheAgendamentoController.swift */,
 			);
 			name = Control;
 			sourceTree = "<group>";
@@ -517,6 +522,7 @@
 				F450BE1D1E303108003B4BAC /* HorariosViewController.swift */,
 				3F54A3391BA4798400383429 /* AgendarViewController.swift */,
 				F450BE1E1E303108003B4BAC /* HorariosViewController.xib */,
+				F45094A31E4A9A1600A9A05D /* DetalheAgendamento.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -620,6 +626,7 @@
 				3FFEBD001B2FC78D00C03FE1 /* carros_classicos.json in Resources */,
 				3FFD796B1B8A000100FDFF2B /* orcamentos@2x.png in Resources */,
 				3F54A33C1BA4798400383429 /* AgendarViewController.xib in Resources */,
+				F45094A41E4A9A1600A9A05D /* DetalheAgendamento.storyboard in Resources */,
 				3F1B62251B3900470090E5C9 /* vendas.json in Resources */,
 				3FFD79701B8A000100FDFF2B /* sair.png in Resources */,
 				F4F127C71DF10365005FFEDF /* arrow.svg in Resources */,
@@ -686,6 +693,7 @@
 			files = (
 				3F8518F11B560072006468E8 /* ProdutoOrcamento.swift in Sources */,
 				3F02955F1B438129009510E4 /* ProdutoViewController.swift in Sources */,
+				F45094A61E4A9A6800A9A05D /* DetalheAgendamentoController.swift in Sources */,
 				3FFEBCF61B2F994F00C03FE1 /* LoginViewController.swift in Sources */,
 				3F30502B1D373A4600719913 /* MedicoService.swift in Sources */,
 				3FFEBCF91B2FA0E200C03FE1 /* AgendaService.swift in Sources */,

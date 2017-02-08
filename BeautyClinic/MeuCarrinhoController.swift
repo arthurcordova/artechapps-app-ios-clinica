@@ -21,6 +21,7 @@ class MeuCarrinhoController: UIViewController, UITableViewDataSource, UITableVie
   
     var list = Array<String>()
     var dashboard: Dashboard?
+    var total: Float = 0.0
     
     @IBAction func funcBack(sender: AnyObject) {
         self.navigationController?.popViewControllerAnimated(true);
@@ -63,7 +64,13 @@ class MeuCarrinhoController: UIViewController, UITableViewDataSource, UITableVie
         cell.descricao?.text = contentArray[1]
         cell.quantidade?.text = contentArray[2]
         cell.valor?.text = contentArray[3]
-       
+        
+        total += NSString(string: contentArray[3]).floatValue;
+        print("\(total)")
+        let valorStr :String = "R$ " + String(format:"%.2f", total)
+
+        lblValor.text = valorStr
+        
         return cell
     }
     
