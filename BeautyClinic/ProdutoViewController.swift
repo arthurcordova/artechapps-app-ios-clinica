@@ -108,23 +108,15 @@ class ProdutoViewController: UIViewController, UITableViewDataSource {
             }))
             
             addAlerta.addAction(UIAlertAction(title: "Não", style: .Cancel, handler: nil))
-            
-//            addAlerta.addTextFieldWithConfigurationHandler({(textField: UITextField!) in
-//                textField.text = "1"
-//                //textField.placeholder = "Informe a quantidade"
-//                qtdField = textField
-//            })
-            presentViewController(addAlerta, animated: true, completion: nil)
+                presentViewController(addAlerta, animated: true, completion: nil)
             self.tableView.deselectRowAtIndexPath(indexPath, animated:true)
 
         } else {
-            
-            let buscaHorario = HorariosViewController(nibName: "HorariosViewController", bundle: nil)
-            self.navigationController!.pushViewController(buscaHorario, animated: true)
-            
+            let horariosAgendamento: UIStoryboard = UIStoryboard(name: "HorariosAgendamento", bundle: nil)
+            let viewController = horariosAgendamento.instantiateViewControllerWithIdentifier("horariosID") as! HorariosViewController
+            viewController.produto = produto
+            self.navigationController?.pushViewController(viewController, animated: true);
         }
-        
-        
     }
     
     @available (iOS 8.0, *)

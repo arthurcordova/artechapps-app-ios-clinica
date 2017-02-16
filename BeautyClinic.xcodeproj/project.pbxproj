@@ -112,13 +112,13 @@
 		BD961B1D1DBBC9F7000421BE /* ic_shopping_cart.png in Resources */ = {isa = PBXBuildFile; fileRef = BD961B1A1DBBC9F6000421BE /* ic_shopping_cart.png */; };
 		BD9C9B661DA86E170094D5FD /* PrincipalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD9C9B651DA86E170094D5FD /* PrincipalView.xib */; };
 		BD9C9B681DA86FCF0094D5FD /* ControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9C9B671DA86FCF0094D5FD /* ControllerMain.swift */; };
+		F42BC0371E53E38D00590F8E /* HorariosAgendamento.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42BC0361E53E38D00590F8E /* HorariosAgendamento.storyboard */; };
 		F42C59EE1DE3B518009C61A8 /* DetalheMensagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42C59EC1DE3B518009C61A8 /* DetalheMensagemViewController.swift */; };
 		F42C59EF1DE3B518009C61A8 /* DetalheMensagemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42C59ED1DE3B518009C61A8 /* DetalheMensagemViewController.xib */; };
 		F42C59FB1DE4FB1E009C61A8 /* img.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42C59FA1DE4FB1E009C61A8 /* img.xcassets */; };
 		F45094A41E4A9A1600A9A05D /* DetalheAgendamento.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45094A31E4A9A1600A9A05D /* DetalheAgendamento.storyboard */; };
 		F45094A61E4A9A6800A9A05D /* DetalheAgendamentoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45094A51E4A9A6800A9A05D /* DetalheAgendamentoController.swift */; };
-		F450BE1F1E303108003B4BAC /* HorariosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450BE1D1E303108003B4BAC /* HorariosViewController.swift */; };
-		F450BE201E303108003B4BAC /* HorariosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F450BE1E1E303108003B4BAC /* HorariosViewController.xib */; };
+		F450BE1F1E303108003B4BAC /* HorariosAgendamentoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450BE1D1E303108003B4BAC /* HorariosAgendamentoController.swift */; };
 		F46E47691E46472C0022EEB7 /* CarrinhoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46E47681E46472C0022EEB7 /* CarrinhoDAO.swift */; };
 		F47218F91E400A340055F388 /* Caller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47218F81E400A340055F388 /* Caller.swift */; };
 		F47218FB1E400C110055F388 /* MeuCarrinho.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47218FA1E400C110055F388 /* MeuCarrinho.storyboard */; };
@@ -252,13 +252,13 @@
 		BD961B1A1DBBC9F6000421BE /* ic_shopping_cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_shopping_cart.png; sourceTree = "<group>"; };
 		BD9C9B651DA86E170094D5FD /* PrincipalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrincipalView.xib; sourceTree = "<group>"; };
 		BD9C9B671DA86FCF0094D5FD /* ControllerMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerMain.swift; sourceTree = "<group>"; };
+		F42BC0361E53E38D00590F8E /* HorariosAgendamento.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HorariosAgendamento.storyboard; sourceTree = "<group>"; };
 		F42C59EC1DE3B518009C61A8 /* DetalheMensagemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheMensagemViewController.swift; sourceTree = "<group>"; };
 		F42C59ED1DE3B518009C61A8 /* DetalheMensagemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalheMensagemViewController.xib; sourceTree = "<group>"; };
 		F42C59FA1DE4FB1E009C61A8 /* img.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = img.xcassets; sourceTree = "<group>"; };
 		F45094A31E4A9A1600A9A05D /* DetalheAgendamento.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetalheAgendamento.storyboard; sourceTree = "<group>"; };
 		F45094A51E4A9A6800A9A05D /* DetalheAgendamentoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheAgendamentoController.swift; sourceTree = "<group>"; };
-		F450BE1D1E303108003B4BAC /* HorariosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorariosViewController.swift; sourceTree = "<group>"; };
-		F450BE1E1E303108003B4BAC /* HorariosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorariosViewController.xib; sourceTree = "<group>"; };
+		F450BE1D1E303108003B4BAC /* HorariosAgendamentoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorariosAgendamentoController.swift; sourceTree = "<group>"; };
 		F46E47681E46472C0022EEB7 /* CarrinhoDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrinhoDAO.swift; sourceTree = "<group>"; };
 		F47218F81E400A340055F388 /* Caller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caller.swift; sourceTree = "<group>"; };
 		F47218FA1E400C110055F388 /* MeuCarrinho.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MeuCarrinho.storyboard; sourceTree = "<group>"; };
@@ -519,10 +519,10 @@
 				BD9C9B651DA86E170094D5FD /* PrincipalView.xib */,
 				F42C59ED1DE3B518009C61A8 /* DetalheMensagemViewController.xib */,
 				F48CC19F1DF62AE700159E4A /* Dashboard.xib */,
-				F450BE1D1E303108003B4BAC /* HorariosViewController.swift */,
+				F450BE1D1E303108003B4BAC /* HorariosAgendamentoController.swift */,
 				3F54A3391BA4798400383429 /* AgendarViewController.swift */,
-				F450BE1E1E303108003B4BAC /* HorariosViewController.xib */,
 				F45094A31E4A9A1600A9A05D /* DetalheAgendamento.storyboard */,
+				F42BC0361E53E38D00590F8E /* HorariosAgendamento.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -614,7 +614,6 @@
 				F4A508FA1DFF8A0900B3F7AE /* ic_shopping_cart_white.imageset in Resources */,
 				3FFD796F1B8A000100FDFF2B /* promocoes@2x.png in Resources */,
 				BD9C9B661DA86E170094D5FD /* PrincipalView.xib in Resources */,
-				F450BE201E303108003B4BAC /* HorariosViewController.xib in Resources */,
 				3F0295601B438129009510E4 /* ProdutoViewController.xib in Resources */,
 				3FFD79661B8A000100FDFF2B /* agendamentos.png in Resources */,
 				3FFEBD011B2FC78D00C03FE1 /* produtos.json in Resources */,
@@ -674,6 +673,7 @@
 				3FFEBCF71B2F994F00C03FE1 /* LoginViewController.xib in Resources */,
 				BD3AC61D1DAC5B4700FD64FB /* ic_local_atm@2x.png in Resources */,
 				3FFD79711B8A000100FDFF2B /* sair@2x.png in Resources */,
+				F42BC0371E53E38D00590F8E /* HorariosAgendamento.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,7 +716,7 @@
 				3F6756CD1B659B0E006B9154 /* Cliente.swift in Sources */,
 				F46E47691E46472C0022EEB7 /* CarrinhoDAO.swift in Sources */,
 				3F66CA361B44D81000A78C64 /* AvisoService.swift in Sources */,
-				F450BE1F1E303108003B4BAC /* HorariosViewController.swift in Sources */,
+				F450BE1F1E303108003B4BAC /* HorariosAgendamentoController.swift in Sources */,
 				3F1B621B1B38FB030090E5C9 /* VendaService.swift in Sources */,
 				3FD199171BA856450013BE4E /* HorarioCell.swift in Sources */,
 				BD9C9B681DA86FCF0094D5FD /* ControllerMain.swift in Sources */,

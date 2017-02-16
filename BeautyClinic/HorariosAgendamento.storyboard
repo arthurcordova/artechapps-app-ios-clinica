@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="feN-T4-QQM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Horários-->
+        <scene sceneID="lpC-yb-0pG">
+            <objects>
+                <viewController storyboardIdentifier="horariosID" title="Horários" id="feN-T4-QQM" customClass="HorariosViewController" customModule="BeautyClinic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wSn-3t-aBc"/>
+                        <viewControllerLayoutGuide type="bottom" id="fDQ-9F-evq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6OQ-Yv-Tl8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Selecione uma data..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYA-Ic-9QF">
+                                <rect key="frame" x="0.0" y="20" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ZCX-Fg-719"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="alI-nq-Yh2">
+                                <rect key="frame" x="0.0" y="52" width="375" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="44c-qq-Mor"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="508892901.72629499">
+                                    <!--2017-02-15 23:08:21 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                    <!--1970-01-01 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                                    <!--2037-12-31 11:00:00 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="pt_BR"/>
+                                <connections>
+                                    <action selector="changePicker:" destination="feN-T4-QQM" eventType="valueChanged" id="EXe-s7-uKQ"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Selecione um horário..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ky5-Qa-zL7">
+                                <rect key="frame" x="0.0" y="270" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="rbf-kR-lld"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SXb-QU-f5k">
+                                <rect key="frame" x="0.0" y="299" width="375" height="368"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SXb-QU-f5k" firstAttribute="leading" secondItem="6OQ-Yv-Tl8" secondAttribute="leading" constant="16" id="6ty-Vy-kp0"/>
+                            <constraint firstItem="fDQ-9F-evq" firstAttribute="top" secondItem="SXb-QU-f5k" secondAttribute="bottom" id="Bwe-rm-xtm"/>
+                            <constraint firstItem="fDQ-9F-evq" firstAttribute="top" secondItem="SXb-QU-f5k" secondAttribute="bottom" id="DdD-fN-zth"/>
+                            <constraint firstAttribute="trailing" secondItem="SXb-QU-f5k" secondAttribute="trailing" constant="16" id="EaK-4E-NqI"/>
+                            <constraint firstItem="ky5-Qa-zL7" firstAttribute="top" secondItem="alI-nq-Yh2" secondAttribute="bottom" constant="8" id="Jrm-yt-1V8"/>
+                            <constraint firstItem="OYA-Ic-9QF" firstAttribute="top" secondItem="wSn-3t-aBc" secondAttribute="bottom" constant="8" id="Ok1-Gn-1PP"/>
+                            <constraint firstItem="SXb-QU-f5k" firstAttribute="leading" secondItem="6OQ-Yv-Tl8" secondAttribute="leading" constant="16" id="Qhd-1G-6Et"/>
+                            <constraint firstAttribute="trailing" secondItem="SXb-QU-f5k" secondAttribute="trailing" constant="16" id="Uoj-dt-igl"/>
+                            <constraint firstItem="SXb-QU-f5k" firstAttribute="leading" secondItem="6OQ-Yv-Tl8" secondAttribute="leading" constant="16" id="WQd-CR-h3Z"/>
+                            <constraint firstItem="SXb-QU-f5k" firstAttribute="centerX" secondItem="6OQ-Yv-Tl8" secondAttribute="centerX" id="ZLD-be-4k1"/>
+                            <constraint firstItem="alI-nq-Yh2" firstAttribute="top" secondItem="OYA-Ic-9QF" secondAttribute="bottom" constant="11" id="aDu-3g-JaV"/>
+                            <constraint firstAttribute="trailing" secondItem="ky5-Qa-zL7" secondAttribute="trailing" constant="16" id="d5D-0g-zq2"/>
+                            <constraint firstItem="alI-nq-Yh2" firstAttribute="leading" secondItem="6OQ-Yv-Tl8" secondAttribute="leading" id="eRX-GH-Fug"/>
+                            <constraint firstItem="OYA-Ic-9QF" firstAttribute="leading" secondItem="6OQ-Yv-Tl8" secondAttribute="leading" constant="16" id="euG-mx-F3m"/>
+                            <constraint firstAttribute="trailing" secondItem="alI-nq-Yh2" secondAttribute="trailing" id="fcl-ve-x24"/>
+                            <constraint firstAttribute="trailing" secondItem="SXb-QU-f5k" secondAttribute="trailing" constant="16" id="moh-Ur-rTK"/>
+                            <constraint firstItem="ky5-Qa-zL7" firstAttribute="leading" secondItem="6OQ-Yv-Tl8" secondAttribute="leading" constant="16" id="qbB-GO-Yl6"/>
+                            <constraint firstItem="fDQ-9F-evq" firstAttribute="top" secondItem="SXb-QU-f5k" secondAttribute="bottom" id="rSZ-Q9-nf5"/>
+                            <constraint firstAttribute="trailing" secondItem="OYA-Ic-9QF" secondAttribute="trailing" constant="16" id="vCG-Fh-lYK"/>
+                            <constraint firstItem="SXb-QU-f5k" firstAttribute="top" secondItem="ky5-Qa-zL7" secondAttribute="bottom" constant="8" id="zsw-PK-cI5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePIcker" destination="alI-nq-Yh2" id="5I3-KW-xRa"/>
+                        <outlet property="tableView" destination="SXb-QU-f5k" id="RBY-Ef-3gh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tdd-Nl-SMT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112.8" y="-18.440779610194905"/>
+        </scene>
+    </scenes>
+</document>
