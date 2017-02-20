@@ -123,6 +123,8 @@
 		F47218F91E400A340055F388 /* Caller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47218F81E400A340055F388 /* Caller.swift */; };
 		F47218FB1E400C110055F388 /* MeuCarrinho.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47218FA1E400C110055F388 /* MeuCarrinho.storyboard */; };
 		F47218FD1E400C630055F388 /* MeuCarrinhoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47218FC1E400C630055F388 /* MeuCarrinhoController.swift */; };
+		F473ADA41E5A8E6B001B024F /* DetalheNovoAgendamentoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F473ADA31E5A8E6B001B024F /* DetalheNovoAgendamentoController.swift */; };
+		F473ADA61E5A92B5001B024F /* NovoAgendamentoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F473ADA51E5A92B5001B024F /* NovoAgendamentoModel.swift */; };
 		F48CC1A01DF62AE700159E4A /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48CC19E1DF62AE700159E4A /* Dashboard.swift */; };
 		F48CC1A11DF62AE700159E4A /* Dashboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48CC19F1DF62AE700159E4A /* Dashboard.xib */; };
 		F4A508FA1DFF8A0900B3F7AE /* ic_shopping_cart_white.imageset in Resources */ = {isa = PBXBuildFile; fileRef = F4A508F91DFF8A0900B3F7AE /* ic_shopping_cart_white.imageset */; };
@@ -263,6 +265,8 @@
 		F47218F81E400A340055F388 /* Caller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caller.swift; sourceTree = "<group>"; };
 		F47218FA1E400C110055F388 /* MeuCarrinho.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MeuCarrinho.storyboard; sourceTree = "<group>"; };
 		F47218FC1E400C630055F388 /* MeuCarrinhoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeuCarrinhoController.swift; sourceTree = "<group>"; };
+		F473ADA31E5A8E6B001B024F /* DetalheNovoAgendamentoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetalheNovoAgendamentoController.swift; path = ../DetalheNovoAgendamentoController.swift; sourceTree = "<group>"; };
+		F473ADA51E5A92B5001B024F /* NovoAgendamentoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovoAgendamentoModel.swift; sourceTree = "<group>"; };
 		F48CC19E1DF62AE700159E4A /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		F48CC19F1DF62AE700159E4A /* Dashboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Dashboard.xib; sourceTree = "<group>"; };
 		F4A508F91DFF8A0900B3F7AE /* ic_shopping_cart_white.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ic_shopping_cart_white.imageset; sourceTree = "<group>"; };
@@ -422,6 +426,7 @@
 				3F8518F01B560072006468E8 /* ProdutoOrcamento.swift */,
 				3F1B62181B38FA6F0090E5C9 /* Venda.swift */,
 				F4C6DBD11E492CB40001B090 /* CarrinhoStruct.swift */,
+				F473ADA51E5A92B5001B024F /* NovoAgendamentoModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -446,6 +451,7 @@
 		F4F7680C1DEF8F56002797A2 /* Control */ = {
 			isa = PBXGroup;
 			children = (
+				F473ADA31E5A8E6B001B024F /* DetalheNovoAgendamentoController.swift */,
 				F48CC19E1DF62AE700159E4A /* Dashboard.swift */,
 				F4F127C21DEF928D005FFEDF /* NovoAgendamento.swift */,
 				3FFEBCB61B2F949500C03FE1 /* AppDelegate.swift */,
@@ -740,6 +746,8 @@
 				3F9248881BAF0CC600BEB1B0 /* PrincipalViewController.swift in Sources */,
 				3FD199241BA88E9B0013BE4E /* PesquisaProdViewController.swift in Sources */,
 				3F66CA381B44DBC700A78C64 /* Utils.swift in Sources */,
+				F473ADA41E5A8E6B001B024F /* DetalheNovoAgendamentoController.swift in Sources */,
+				F473ADA61E5A92B5001B024F /* NovoAgendamentoModel.swift in Sources */,
 				3F7095A71D24C09D000E5670 /* CadastroService.swift in Sources */,
 				3F273AC31B35D06C00267B0B /* AgendaViewController.swift in Sources */,
 				F4F127C41DEF928D005FFEDF /* NovoAgendamento.swift in Sources */,

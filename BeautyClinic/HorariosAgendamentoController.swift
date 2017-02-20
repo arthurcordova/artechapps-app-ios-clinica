@@ -23,6 +23,7 @@ class HorariosViewController: UIViewController, UITableViewDataSource, UITableVi
     var listHorarios: Array<Horario> = []
     var produto: Produto!
     var horarioSel: String = ""
+    let model = NovoAgendamentoModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,7 +61,7 @@ class HorariosViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listHorarios.count
     }
-        
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
         cell.textLabel?.text = listHorarios[indexPath.row].horarioInicial
@@ -69,5 +70,14 @@ class HorariosViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
+        self.model.data = listHorarios[indexPath.row].horarioInicial
+        self.performSegueWithIdentifier("detailSegue", sender: model)
     }
+    
+    // This function is called before the segue
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let detalheNovoAgendamento = segue.destinationViewController as! DetalheNovoAgendamentoController
+        detalheNovoAgendamento.model = self.model
+    }
+    
 }
